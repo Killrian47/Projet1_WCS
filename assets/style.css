@@ -1,0 +1,22 @@
+@import "main.css";
+@import "header.css";
+@import "projet3Helene.css";
+@font-face {
+    font-family: "pauls_super_fontregular";
+    src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+    width: 100%;
+}
+body {
+    height: 100vh;
+}
+

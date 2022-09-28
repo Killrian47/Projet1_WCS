@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/style.css">
 
     <title>Superman Curriculum Vitae</title>
 </head>
 <body>
-    <div class='switch-language'>BOUTON</div>
+    <?php
+    include 'header.php'
+    ?>
     <main>
         <section class="grid-central">
             <div class="skills">
@@ -68,6 +70,9 @@
             </div>
 
         </section>
+        <?php 
+    include 'partie3Helene.php'
+    ?>
     </main>
     <script src="script.js"></script>
 </body>
