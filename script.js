@@ -1,3 +1,9 @@
+let toggle = document.querySelector('.toggle')
+let body = document.querySelector('body')
+
+toggle.addEventListener('click', function() {
+    body.classList.toggle('dark-thema')
+
 let questionBlock0=document.querySelector('.question-block0');
 let questionBlock1=document.querySelector('.question-block1'); 
 let questionBlock2=document.querySelector('.question-block2'); 
@@ -26,8 +32,3 @@ questionBlock2.addEventListener("click",function(event){
     answerText0.classList.remove('answerShow');
     answerText1.classList.remove('answerShow');
 });
-let body=document.querySelector('body');
-let en = document.querySelector('.switch-language')
-en.addEventListener('click', function() {
-    body.classList.toggle('english')
-})
