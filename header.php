@@ -11,35 +11,30 @@
 </head>
 <body>
     <header>
+
         <nav class="header-container">
 
             <div class="logo">
-                <!-- Logo !-->
-                <img  src="/assets/logo.png" alt="logo">
+                <img src="/assets/logo2.png" alt="This is THE logo">
             </div>
+
             <div class="name_menu_toggle">
 
-                <div class="name-toggle-lang">
-    
+                <div class="name-menu">
                     <div class="name">
-                        <h2>Superman</h2>
+                        <h2 class="name-hero">Superman</h2>
                     </div>
-                
-                    <div class="toggles">
 
-                        <div class="toggle">
-                            <i class="fas fa-toggle-off light"></i>
-                            <i class="fas fa-toggle-on dark"></i>
-                        </div>
-                    </div>
+                    <ul class="menu">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-
-            
-                <ul class="menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
+                <div class="toggle">
+                    <i class="fas fa-toggle-off light"></i>
+                    <i class="fas fa-toggle-on dark"></i>
+                </div>    
             </div>
         </nav>
     
