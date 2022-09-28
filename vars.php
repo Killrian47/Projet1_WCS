@@ -37,3 +37,10 @@ $answers_en=[
     'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
     'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem'
 ];
+$text_hover=[
+    "111LLorem ipsum dolor sit amet consectetur",
+    "222LLorem ipsum dolor sit amet consectetur",
+    "333LLorem ipsum dolor sit amet consectetur",
+    "444LLorem ipsum dolor sit amet consectetur",
+    "555LLorem ipsum dolor sit amet consectetur"
+];
