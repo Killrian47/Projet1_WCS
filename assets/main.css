@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "pauls_super_fontregular";
+  src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .grid-central {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -8,6 +19,14 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.experiences-items {
+  width: 100%;
+  text-decoration: none;
+}
+.experiences-items:hover {
+  background-color: #ecb35a;
 }
 
 .skills {
@@ -374,4 +393,30 @@ ul li {
 }
 .question-block4:hover {
   background-color: #72460a;
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: #ecb35a;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */

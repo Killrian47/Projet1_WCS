@@ -120,14 +120,7 @@ footer {
 }
 
 
-:root {
-    --primary-color: #f7c685;
-    --secondary-color: #b38742;
-    --gray: #5b5953;
-    --light: white;
-    --dark: #0e1215;
 
-}
 
 @media screen and (min-width: 800px) {
     .header-container {
