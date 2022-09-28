@@ -5,10 +5,12 @@
     font-weight: normal;
     font-style: normal;
 }
-$primary-color:#f7d5a7;
-$secondary-color:#ecb35a;
-$gray: #5b5953;
-$primary-darken:scale-color($primary-color, $lightness:-70%);
+$title-blocks-color:#A80F14;
+$title-head-color:#DBAB64;
+$background-color:#0471ff22;
+$white:white;
+$black:black;
+$background-darken:rgba(0, 34, 78, 0.1333333333);
 * {
     margin:0;
     box-sizing:border-box;
@@ -24,20 +26,33 @@ $primary-darken:scale-color($primary-color, $lightness:-70%);
     justify-content:space-around;
     align-items:center;
 }
+.experiences-items {
+    width:100%;
+    text-decoration:none;
+    
+    &:hover {
+        background-color:$background-darken;
+    }
+}
+.experiences {
+        background-color:$background-color; 
+        border:1px solid $title-blocks-color;
+        border-top:3px solid $title-blocks-color;
+    }
 .skills {
     grid-column-start:1;
     grid-column-end:1;
     grid-row-start:2;
     grid-row-end:3;
-    background-color:$primary-color; 
-    border-right:2px solid white; 
+    border-right:1px solid $title-blocks-color; 
 }
 .hobbies {
     grid-column-start:1;
     grid-column-end:1;
     grid-row-start:3;
     grid-row-end:4;
-    // background-color:$primary-color;
+    background-color:$background-color; 
+    border:1px solid $title-blocks-color;
     .hobbies-en-items {
         display:none;
     }
@@ -49,18 +64,19 @@ $primary-darken:scale-color($primary-color, $lightness:-70%);
     grid-row-start:1;
     grid-row-end:4;
     // border:1px solid black;
-    background-color:$primary-color;
+    background-color:$background-color;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
+    border-top:3px solid $title-blocks-color;
 }
-h2 {
+.main-blocks-titles {
     font-size:clamp(16px,4vw,2rem);
     font-family: "Lato", sans-serif; 
     text-align:center;
     font-weight: lighter;
-    color:$primary-darken;
+    color:$title-blocks-color;
     padding:8px;
     .first-letter {
         font-family: 'pauls_super_fontregular';
@@ -73,7 +89,7 @@ ul {
     li {
     list-style:none;
     line-height:32px;
-    color:$primary-darken;
+    color:$black;
     text-align:center;
     }
 }
@@ -91,8 +107,8 @@ ul {
     text-decoration:none;
     color:black;
     &:hover {
-        background-color:$primary-darken;
-        color:$primary-color;
+        background-color:$background-darken;
+        color:$black;
     }
 }
 @keyframes answer-show {
@@ -111,6 +127,7 @@ ul {
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
+    color:$black;
 }
 @mixin answer {
     text-align: left;
@@ -144,7 +161,7 @@ ul {
     padding:8px;
     width:100%;
     &:hover {
-        background-color:$primary-darken;
+        background-color:$background-darken;
     }
 }
 
@@ -162,3 +179,31 @@ ul {
         @include question-block()
     }
 }
+
+// Test de text en hover
+
+.hovertext {
+    position: relative;
+  }
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: $background-darken;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 0.5s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 110%;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
