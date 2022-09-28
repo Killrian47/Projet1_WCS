@@ -1,15 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-html {
-    width: 100%;
-}
-body {
-    height: 100vh;
-}
+
 .header-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
