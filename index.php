@@ -15,7 +15,7 @@
     <main>
         <section class="grid-central">
             <div class="skills">
-                <h2><span class="first-letter">S</span>kills</h2>
+                <h2 class="main-blocks-titles"><span class="first-letter">S</span>kills</h2>
                 <ul>
                 <?php
                 include 'vars.php';
@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div class="experiences">
-                <h2><span class="first-letter">E</span>xperience</h2>
+                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperience</h2>
                 <ul>
                 <?php
                 for ($i=0;$i<count($experiences);$i++) {
@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="hobbies">
-                <h2>
+                <h2 class="main-blocks-titles">
                     <span class="first-letter">H</span>obbies
                 </h2>
                 <ul>
@@ -54,7 +54,7 @@
 
             </div>
             <div class="common-questions-container">
-                <h2>
+                <h2 class="main-blocks-titles">
                     <span class="first-letter">C</span>ommon questions
                 </h2>
                 <div class="question-answer-block">

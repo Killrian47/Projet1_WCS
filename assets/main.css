@@ -60,7 +60,7 @@
   align-items: center;
 }
 
-h2 {
+.main-blocks-titles {
   font-size: clamp(16px, 4vw, 2rem);
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -68,7 +68,7 @@ h2 {
   color: #72460a;
   padding: 8px;
 }
-h2 .first-letter {
+.main-blocks-titles .first-letter {
   font-family: "pauls_super_fontregular";
   font-size: clamp(0.8em, 7vw, 2.5rem);
   font-weight: bold;
