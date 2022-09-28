@@ -13,6 +13,17 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+:root {
+    --primary-color: #f7c685;
+    --secondary-color: #b38742;
+    --gray: #5b5953;
+    --light: white;
+    --dark: #0e1215;
+}
+
+
+
 html {
     width: 100%;
 }
