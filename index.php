@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div class="experiences">
-                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperience</h2>
+                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperiences</h2>
                 <ul>
                 <?php
                 for ($i=0;$i<count($experiencesEN);$i++) {

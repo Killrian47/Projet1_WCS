@@ -38,11 +38,9 @@ $answersFR=[
 // Vars en anglais
 
 $hobbiesEN=[
-    "Hobbie 1",
-    "Hobbie 2",
-    "Hobbie 3",
-    "Hobbie 4",
-    "Hobbie 5",
+    "Playing chess",
+    "Metal Work",
+    "Scrapbooking",
 ];
 $skillsEN=[
     "Laser eye",
@@ -58,11 +56,11 @@ $experiencesEN=[
 ];
 
 $questionsEN=[
-    'Question test 1',
-    'Question test 2',
-    'Question test 3',
-    'Question test 4',
-    'Question test 5',
+    'Why makes you different from all the superheroes ?',
+    'You said you can fly. But how fast ?',
+    'Let\'s say I need you, right now. How can I contact you ?',
+    'Considering your powerness, are you ready to work in a team ?',
+    'Who is Martha ?',
 ];
 $textHoverEN=[
     "Justice League, The Legion of Superheroes,...",
@@ -72,9 +70,9 @@ $textHoverEN=[
     "555LLorem ipsum dolor sit amet consectetur",
 ];
 $answersEN=[
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
+    'The main difference is that I don\' need any armor, any weapon, any substances, to get my powers. This makes me more efficient than any other superhero, and reduces costs.',
+    'I can fly a thousand time faster than the speed of light. Einstein would have gone mad, if he knew me.',
+    'You can simply ask out loud for my help, I will hear you, and in a split second I will be by your side.',
+    'Being in a team makes you stronger. No matter how fast or strong I can be, nothing replaces teamwork. I am ready to be fully committed into a team.',
+    'How do you know her !? MAAAAAARTHAAAAAA',
 ];
