@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "pauls_super_fontregular";
+  src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-central {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.experiences, .skills, .hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.experiences-items {
+  width: 100%;
+  text-decoration: none;
+}
+.experiences-items:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.experiences {
+  background-color: rgba(4, 113, 255, 0.1333333333);
+  border: 1px solid #A80F14;
+  border-top: 3px solid #A80F14;
+}
+
+.skills {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-right: 1px solid #A80F14;
+}
+
+.hobbies {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: rgba(4, 113, 255, 0.1333333333);
+  border: 1px solid #A80F14;
+}
+.hobbies .hobbies-en-items {
+  display: none;
+}
+
+.common-questions-container {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgba(4, 113, 255, 0.1333333333);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #A80F14;
+}
+
+.main-blocks-titles {
+  font-size: clamp(16px, 4vw, 2rem);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  color: #A80F14;
+  padding: 8px;
+}
+.main-blocks-titles .first-letter {
+  font-family: "pauls_super_fontregular";
+  font-size: clamp(0.8em, 7vw, 2.5rem);
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  line-height: 32px;
+  color: black;
+  text-align: center;
+}
+
+.question-answer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.contact-btn {
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  text-decoration: none;
+  color: black;
+}
+.contact-btn:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+  color: black;
+}
+
+@-webkit-keyframes answer-show {
+  0% {
+    line-height: 0px;
+    opacity: 0;
+  }
+  100% {
+    line-height: 24px;
+    opacity: 1;
+  }
+}
+
+@keyframes answer-show {
+  0% {
+    line-height: 0px;
+    opacity: 0;
+  }
+  100% {
+    line-height: 24px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes answer-hide {
+  0% {
+    line-height: 24px;
+    opacity: 1;
+  }
+  100% {
+    line-height: 0px;
+    opacity: 0;
+  }
+}
+@keyframes answer-hide {
+  0% {
+    line-height: 24px;
+    opacity: 1;
+  }
+  100% {
+    line-height: 0px;
+    opacity: 0;
+  }
+}
+.question0 {
+  align-content: center;
+  align-self: flex-start;
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: black;
+}
+
+.answer0 {
+  text-align: left;
+  line-height: 0px;
+  opacity: 0;
+  -webkit-animation-name: answer-hide;
+          animation-name: answer-hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.answer0.answerShow {
+  display: block;
+  -webkit-animation-name: answer-show;
+          animation-name: answer-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.button0 {
+  font-weight: bolder;
+  font-size: 1.5em;
+  grid-column-start: 2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  align-self: flex-end;
+  width: 20%;
+}
+
+.question-block0 {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+}
+.question-block0:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.question1 {
+  align-content: center;
+  align-self: flex-start;
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: black;
+}
+
+.answer1 {
+  text-align: left;
+  line-height: 0px;
+  opacity: 0;
+  -webkit-animation-name: answer-hide;
+          animation-name: answer-hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.answer1.answerShow {
+  display: block;
+  -webkit-animation-name: answer-show;
+          animation-name: answer-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.button1 {
+  font-weight: bolder;
+  font-size: 1.5em;
+  grid-column-start: 2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  align-self: flex-end;
+  width: 20%;
+}
+
+.question-block1 {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+}
+.question-block1:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.question2 {
+  align-content: center;
+  align-self: flex-start;
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: black;
+}
+
+.answer2 {
+  text-align: left;
+  line-height: 0px;
+  opacity: 0;
+  -webkit-animation-name: answer-hide;
+          animation-name: answer-hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.answer2.answerShow {
+  display: block;
+  -webkit-animation-name: answer-show;
+          animation-name: answer-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.button2 {
+  font-weight: bolder;
+  font-size: 1.5em;
+  grid-column-start: 2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  align-self: flex-end;
+  width: 20%;
+}
+
+.question-block2 {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+}
+.question-block2:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.question3 {
+  align-content: center;
+  align-self: flex-start;
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: black;
+}
+
+.answer3 {
+  text-align: left;
+  line-height: 0px;
+  opacity: 0;
+  -webkit-animation-name: answer-hide;
+          animation-name: answer-hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.answer3.answerShow {
+  display: block;
+  -webkit-animation-name: answer-show;
+          animation-name: answer-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.button3 {
+  font-weight: bolder;
+  font-size: 1.5em;
+  grid-column-start: 2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  align-self: flex-end;
+  width: 20%;
+}
+
+.question-block3 {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+}
+.question-block3:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.question4 {
+  align-content: center;
+  align-self: flex-start;
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  color: black;
+}
+
+.answer4 {
+  text-align: left;
+  line-height: 0px;
+  opacity: 0;
+  -webkit-animation-name: answer-hide;
+          animation-name: answer-hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.answer4.answerShow {
+  display: block;
+  -webkit-animation-name: answer-show;
+          animation-name: answer-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.button4 {
+  font-weight: bolder;
+  font-size: 1.5em;
+  grid-column-start: 2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  align-self: flex-end;
+  width: 20%;
+}
+
+.question-block4 {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+}
+.question-block4:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: rgba(0, 34, 78, 0.1333333333);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=main.css.map */
