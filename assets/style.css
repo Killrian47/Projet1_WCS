@@ -1,6 +1,7 @@
 @import "main.css";
 @import "header.css";
 @import "projet3Helene.css";
+@import url('dark-mode.css');
 @font-face {
     font-family: "pauls_super_fontregular";
     src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
@@ -13,6 +14,16 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+:root {
+    --primary-color: #f7c685;
+    --secondary-color: #b38742;
+    --gray: #5b5953;
+    --light: white;
+    --dark: #0e1215;
+
+}
+
 html {
     width: 100%;
 }
