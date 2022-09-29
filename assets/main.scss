@@ -10,7 +10,8 @@ $title-head-color:#DBAB64;
 $background-color:#0471ff22;
 $white:white;
 $black:black;
-$background-darken:rgba(0, 34, 78, 0.1333333333);
+$background-darken:rgba(0, 34, 78, 0.293);
+$hover-background:rgb(56, 105, 169);
 * {
     margin:0;
     box-sizing:border-box;
@@ -53,10 +54,6 @@ $background-darken:rgba(0, 34, 78, 0.1333333333);
     grid-row-end:4;
     background-color:$background-color; 
     border:1px solid $title-blocks-color;
-    .hobbies-en-items {
-        display:none;
-    }
-
 }
 .common-questions-container {
     grid-column-start:2;
@@ -78,10 +75,15 @@ $background-darken:rgba(0, 34, 78, 0.1333333333);
     font-weight: lighter;
     color:$title-blocks-color;
     padding:8px;
+    line-height:24px;
+    font-weight: bold;
     .first-letter {
         font-family: 'pauls_super_fontregular';
-        font-size:clamp(0.8em,7vw,2.5rem);
+        font-size:clamp(1.5em,10vw,2.5rem);
         font-weight: bold;
+        vertical-align: -webkit-baseline-middle;
+        margin-right:-4px;
+        
     }
 }
 ul {
@@ -128,6 +130,7 @@ ul {
     vertical-align: middle;
     line-height: 30px;
     color:$black;
+    font-size:clamp(16px,3vw,1.5rem);
 }
 @mixin answer {
     text-align: left;
@@ -143,6 +146,8 @@ ul {
         animation-duration:0.5s;
         line-height: 24px;
         opacity:1;
+        font-size:clamp(0.8em,2vw,1.5rem);
+
     }
 }
 @mixin button {
@@ -190,8 +195,9 @@ ul {
     visibility: hidden;
     opacity: 0;
     width: 140px;
-    background-color: $background-darken;
-    color: #fff;
+    background-color: $white;
+    border:2px solid $title-blocks-color;
+    color: $black;
     text-align: center;
     border-radius: 5px;
     padding: 5px 0;

@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 .experiences-items:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
 }
 
 .experiences {
@@ -51,9 +51,6 @@
   background-color: rgba(4, 113, 255, 0.1333333333);
   border: 1px solid #A80F14;
 }
-.hobbies .hobbies-en-items {
-  display: none;
-}
 
 .common-questions-container {
   grid-column-start: 2;
@@ -75,11 +72,15 @@
   font-weight: lighter;
   color: #A80F14;
   padding: 8px;
+  line-height: 24px;
+  font-weight: bold;
 }
 .main-blocks-titles .first-letter {
   font-family: "pauls_super_fontregular";
-  font-size: clamp(0.8em, 7vw, 2.5rem);
+  font-size: clamp(1.5em, 10vw, 2.5rem);
   font-weight: bold;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: -4px;
 }
 
 ul {
@@ -108,7 +109,7 @@ ul li {
   color: black;
 }
 .contact-btn:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
   color: black;
 }
 
@@ -161,6 +162,7 @@ ul li {
   vertical-align: middle;
   line-height: 30px;
   color: black;
+  font-size: clamp(16px, 3vw, 1.5rem);
 }
 
 .answer0 {
@@ -182,6 +184,7 @@ ul li {
           animation-duration: 0.5s;
   line-height: 24px;
   opacity: 1;
+  font-size: clamp(0.8em, 2vw, 1.5rem);
 }
 
 .button0 {
@@ -201,7 +204,7 @@ ul li {
   width: 100%;
 }
 .question-block0:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
 }
 
 .question1 {
@@ -212,6 +215,7 @@ ul li {
   vertical-align: middle;
   line-height: 30px;
   color: black;
+  font-size: clamp(16px, 3vw, 1.5rem);
 }
 
 .answer1 {
@@ -233,6 +237,7 @@ ul li {
           animation-duration: 0.5s;
   line-height: 24px;
   opacity: 1;
+  font-size: clamp(0.8em, 2vw, 1.5rem);
 }
 
 .button1 {
@@ -252,7 +257,7 @@ ul li {
   width: 100%;
 }
 .question-block1:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
 }
 
 .question2 {
@@ -263,6 +268,7 @@ ul li {
   vertical-align: middle;
   line-height: 30px;
   color: black;
+  font-size: clamp(16px, 3vw, 1.5rem);
 }
 
 .answer2 {
@@ -284,6 +290,7 @@ ul li {
           animation-duration: 0.5s;
   line-height: 24px;
   opacity: 1;
+  font-size: clamp(0.8em, 2vw, 1.5rem);
 }
 
 .button2 {
@@ -303,7 +310,7 @@ ul li {
   width: 100%;
 }
 .question-block2:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
 }
 
 .question3 {
@@ -314,6 +321,7 @@ ul li {
   vertical-align: middle;
   line-height: 30px;
   color: black;
+  font-size: clamp(16px, 3vw, 1.5rem);
 }
 
 .answer3 {
@@ -335,6 +343,7 @@ ul li {
           animation-duration: 0.5s;
   line-height: 24px;
   opacity: 1;
+  font-size: clamp(0.8em, 2vw, 1.5rem);
 }
 
 .button3 {
@@ -354,7 +363,7 @@ ul li {
   width: 100%;
 }
 .question-block3:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
 }
 
 .question4 {
@@ -365,6 +374,7 @@ ul li {
   vertical-align: middle;
   line-height: 30px;
   color: black;
+  font-size: clamp(16px, 3vw, 1.5rem);
 }
 
 .answer4 {
@@ -386,6 +396,7 @@ ul li {
           animation-duration: 0.5s;
   line-height: 24px;
   opacity: 1;
+  font-size: clamp(0.8em, 2vw, 1.5rem);
 }
 
 .button4 {
@@ -405,7 +416,7 @@ ul li {
   width: 100%;
 }
 .question-block4:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  background-color: rgba(0, 34, 78, 0.293);
 }
 
 .hovertext {
@@ -417,8 +428,9 @@ ul li {
   visibility: hidden;
   opacity: 0;
   width: 140px;
-  background-color: rgba(0, 34, 78, 0.1333333333);
-  color: #fff;
+  background-color: white;
+  border: 2px solid #A80F14;
+  color: black;
   text-align: center;
   border-radius: 5px;
   padding: 5px 0;
