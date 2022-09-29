@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "pauls_super_fontregular";
+  src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .grid-central {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -10,13 +21,26 @@
   align-items: center;
 }
 
+.experiences-items {
+  width: 100%;
+  text-decoration: none;
+}
+.experiences-items:hover {
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.experiences {
+  background-color: rgba(4, 113, 255, 0.1333333333);
+  border: 1px solid #A80F14;
+  border-top: 3px solid #A80F14;
+}
+
 .skills {
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: #f7d5a7;
-  border-right: 2px solid white;
+  border-right: 1px solid #A80F14;
 }
 
 .hobbies {
@@ -24,6 +48,8 @@
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 4;
+  background-color: rgba(4, 113, 255, 0.1333333333);
+  border: 1px solid #A80F14;
 }
 .hobbies .hobbies-en-items {
   display: none;
@@ -34,22 +60,23 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-color: #f7d5a7;
+  background-color: rgba(4, 113, 255, 0.1333333333);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-top: 3px solid #A80F14;
 }
 
-h2 {
+.main-blocks-titles {
   font-size: clamp(16px, 4vw, 2rem);
   font-family: "Lato", sans-serif;
   text-align: center;
   font-weight: lighter;
-  color: #72460a;
+  color: #A80F14;
   padding: 8px;
 }
-h2 .first-letter {
+.main-blocks-titles .first-letter {
   font-family: "pauls_super_fontregular";
   font-size: clamp(0.8em, 7vw, 2.5rem);
   font-weight: bold;
@@ -61,7 +88,7 @@ ul {
 ul li {
   list-style: none;
   line-height: 32px;
-  color: #72460a;
+  color: black;
   text-align: center;
 }
 
@@ -81,8 +108,8 @@ ul li {
   color: black;
 }
 .contact-btn:hover {
-  background-color: #72460a;
-  color: #f7d5a7;
+  background-color: rgba(0, 34, 78, 0.1333333333);
+  color: black;
 }
 
 @-webkit-keyframes answer-show {
@@ -133,6 +160,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
+  color: black;
 }
 
 .answer0 {
@@ -173,7 +201,7 @@ ul li {
   width: 100%;
 }
 .question-block0:hover {
-  background-color: #72460a;
+  background-color: rgba(0, 34, 78, 0.1333333333);
 }
 
 .question1 {
@@ -183,6 +211,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
+  color: black;
 }
 
 .answer1 {
@@ -223,7 +252,7 @@ ul li {
   width: 100%;
 }
 .question-block1:hover {
-  background-color: #72460a;
+  background-color: rgba(0, 34, 78, 0.1333333333);
 }
 
 .question2 {
@@ -233,6 +262,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
+  color: black;
 }
 
 .answer2 {
@@ -273,7 +303,7 @@ ul li {
   width: 100%;
 }
 .question-block2:hover {
-  background-color: #72460a;
+  background-color: rgba(0, 34, 78, 0.1333333333);
 }
 
 .question3 {
@@ -283,6 +313,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
+  color: black;
 }
 
 .answer3 {
@@ -323,7 +354,7 @@ ul li {
   width: 100%;
 }
 .question-block3:hover {
-  background-color: #72460a;
+  background-color: rgba(0, 34, 78, 0.1333333333);
 }
 
 .question4 {
@@ -333,6 +364,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
+  color: black;
 }
 
 .answer4 {
@@ -373,5 +405,31 @@ ul li {
   width: 100%;
 }
 .question-block4:hover {
-  background-color: #72460a;
+  background-color: rgba(0, 34, 78, 0.1333333333);
+}
+
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: rgba(0, 34, 78, 0.1333333333);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */

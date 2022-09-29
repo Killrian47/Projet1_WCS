@@ -26,9 +26,9 @@
                     </div>
 
                     <ul class="menu">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
                     </ul>
                 </div>
                 <div class="toggle">

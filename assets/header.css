@@ -21,14 +21,6 @@
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.name-toggle-lang {
-    margin-bottom: 15px;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .name-hero {
     font-size: 2rem;
