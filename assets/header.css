@@ -1,10 +1,13 @@
-
+a {
+    color: black;
+    text-decoration: none;
+}
 .header-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--light);
-    color: var(--secondary-color);
+    color: var(--title-head-color);
 }
 .logo {
     height: 116px;
@@ -16,40 +19,95 @@
 .logo img {
     width: 154px;
     height: 116px;
+    animation: slide-to-right 1s ease-out;
 }
 .name_menu_toggle {
     grid-row-start: 1;
     grid-row-end: 3;
+    display: flex;
+    justify-content: space-around;
 }
-
+.name-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .name-hero {
+    margin-top: 10px;
     font-size: 2rem;
     text-align: center;
     text-shadow: black 2px 0px ;
-}
-.toggles {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-.toggle {
-    font-size: 2rem;
+    animation: slide-to-right 1s ease-out;
 }
 .menu {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    float: right;
+    font-size: 1.5rem;
+    animation: slide-to-bottom 1s;
+}
+.toggle {
+    display: flex;
     flex-direction: column;
-    width: 50px;
+    justify-content: space-around;
+}
+.light {
+    margin-right: 20px;
+    font-size: 2rem;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.dark {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    margin-right: 20px;
+    text-align: right;
+}
+
+@keyframes slide-to-right {
+    from {
+        transform: translateX(-300%);
+    }
+    to {
+        transform: translateX(0);
+    } 
+}
+@keyframes slide-to-bottom {
+    from {
+        transform: translateY(-400%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 
-
+@media screen and (min-width: 700px) {
+    .logo {
+        margin-left: 30px;
+    }    
+    .name_menu_toggle {
+        justify-content: space-between;
+    }
+    .name-hero {
+        font-size: 3rem;
+    }
+    .toggle {
+        margin-right: 0%;
+    }
+}
 @media screen and (min-width: 800px) {
     .header-container {
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+    .logo {
+        margin-left: calc(100%/9);
     }
     .name_menu_toggle {
         justify-content: space-between;
@@ -57,14 +115,14 @@
         align-items: center;
         width: 60%;
     }
-    .name-toggle-lang {
-        width: 50%;
+    .name-menu {
+        display: flex;
+        flex-direction: column;
     }
-    .name {
-        /*margin: 50px;
-        padding-right: 100px;*/
+    .name-hero {
+        font-size: 4rem;
     }
     .menu {
-        width: 25%;
+        
     }
 }

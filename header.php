@@ -26,14 +26,16 @@
                     </div>
 
                     <ul class="menu">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
+                        <li><a href="https://www.facebook.com/dcsupermanfr" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/superman/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/Superman"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="toggle">
                     <i class="fas fa-toggle-off light"></i>
                     <i class="fas fa-toggle-on dark"></i>
+                    <a href="/index.php"><p class="fr">FR</p></a>
+                    <a href="/main-en.php"><p class="en">EN</p></a>
                 </div>    
             </div>
         </nav>
