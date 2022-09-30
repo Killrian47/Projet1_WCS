@@ -496,9 +496,13 @@ ul li {
   .skills, .hobbies, .experiences {
     border-top: 1px solid #A80F14;
     border-right: 1px solid #A80F14;
+    background-color: white;
   }
   .experiences, .common-questions-container {
     border-top: 3px solid #A80F14;
+  }
+  .experiences, .hobbies {
+    background-color: rgba(4, 113, 255, 0.1333333333);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -509,6 +513,7 @@ ul li {
   .skills, .hobbies, .experiences {
     border-top: 1px solid #A80F14;
     border-right: 1px solid #A80F14;
+    background-color: white;
   }
   .experiences, .common-questions-container {
     border-top: 3px solid #A80F14;
@@ -518,5 +523,8 @@ ul li {
   }
   .common-questions-container {
     gap: 48px;
+  }
+  .experiences, .hobbies {
+    background-color: rgba(4, 113, 255, 0.1333333333);
   }
 }/*# sourceMappingURL=main.css.map */

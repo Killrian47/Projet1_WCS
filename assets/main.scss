@@ -215,10 +215,13 @@ ul {
     .skills, .hobbies, .experiences {
         border-top:1px solid $title-blocks-color;
         border-right:1px solid $title-blocks-color;
+        background-color:white;
     }
     .experiences, .common-questions-container  {
         border-top:3px solid $title-blocks-color;
-
+    }
+    .experiences, .hobbies {
+        background-color:$background-color;
     }
 
   }
@@ -230,6 +233,7 @@ ul {
     .skills, .hobbies, .experiences {
         border-top:1px solid $title-blocks-color;
         border-right:1px solid $title-blocks-color;
+        background-color:white;
     }
     .experiences, .common-questions-container  {
         border-top:3px solid $title-blocks-color;
@@ -239,6 +243,9 @@ ul {
     }
     .common-questions-container {
         gap:48px;
+    }
+    .experiences, .hobbies {
+        background-color:$background-color;
     }
     
   }
