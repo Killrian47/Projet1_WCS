@@ -1,6 +1,7 @@
 @import "main.css";
 @import "header.css";
 @import "projet3Helene.css";
+@import url('dark-mode.css');
 @font-face {
     font-family: "pauls_super_fontregular";
     src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
@@ -20,15 +21,21 @@
     --gray: #5b5953;
     --light: white;
     --dark: #0e1215;
+<<<<<<< HEAD
 }
 
 
+=======
+
+}
+>>>>>>> a88440b0985d1ce9baf0c35bbeb1aa72561369f6
 
 html {
     width: 100%;
 }
 body {
     height: 100vh;
+    width:100%
 }
 :root {
     --title-blocks-color:#A80F14;

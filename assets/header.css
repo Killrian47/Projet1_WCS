@@ -1,11 +1,14 @@
-
+a {
+    text-decoration: none;
+}
 .header-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--light);
-    color: var(--secondary-color);
+    color: var(--title-head-color);
 }
+
 .logo {
     height: 116px;
     width: 154px;
@@ -16,132 +19,128 @@
 .logo img {
     width: 154px;
     height: 116px;
+    animation: slide-to-right 1s ease-out;
 }
 .name_menu_toggle {
     grid-row-start: 1;
     grid-row-end: 3;
-}
-.name-toggle-lang {
-    margin-bottom: 15px;
-    grid-column-start: 2;
-    grid-row-start: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
 }
-.name {
-    /* border-right: 1px solid black;
-    border-left: 1px solid black;
-    padding: 25px;
-    /* padding-left: px;
-    padding-right: 50px; */
-}
-
-.name h2 {
-    text-align: center;
-    text-shadow: black 2px 0px ;
-}
-.name p {
-    text-align: center;
-    color: var(--dark);
-}
-.toggles {
+.name-menu {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    justify-content: space-around;
 }
-.toggle {
+.name-hero {
+    margin-top: 10px;
     font-size: 2rem;
+    text-align: center;
+    text-shadow: black 2px 0px ;
+    animation: slide-to-right 1s ease-out;
 }
 .menu {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 50px;
-}
-.dark {
-    display: none !important;
-}
-.dark-thema .header-container {
-    color: var(--primary-color);
-    background-color: var(--dark);
-}
-.dark-thema .name p {
-    color: var(--primary-color);
-}
-.dark-thema main {
-    background-color: var(--gray);
-    color: var(--secondary-color);
-}
-.dark-thema .dark {
-    display: block !important;
-}
-.dark-thema .light {
-    display: none;
-}
-main {
-    height: 100vh
-}
-.en {
-    font-size: 2rem;
-    width: 100%;
-    text-align: right;
-    
-}
-
-.p-en {
-    display: none ;
-}
-.english .p-fr {
-    display: none;
-}
-.english .name .p-en {
-    display: block !important;
-}
-.anglais {
-    display: none;
-}
-.english .anglais {
-    display: block !important;
-}
-.english .francais {
-    display: none;
-}
-
-footer {
-    color: #b38742;
-    background-color: black;
-    width: 100%;
-}
-.footer-copy {
+    justify-content: space-around;
     width: 100%;
     float: right;
+    font-size: 1.5rem;
+    animation: slide-to-bottom 1s;
+}
+.menu a {
+    color: black;
+}
+.toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.light {
+    margin-right: 20px;
+    font-size: 2rem;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.dark {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    margin-right: 20px;
+    text-align: right;
+}
+.en, .fr {
+    color: var(--title-head-color);
+}
+
+@keyframes slide-to-right {
+    from {
+        transform: translateX(-300%);
+    }
+    to {
+        transform: translateX(0);
+    } 
+}
+@keyframes slide-to-bottom {
+    from {
+        transform: translateY(-400%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 
-
-
+@media screen and (min-width: 700px) {
+    .logo {
+        margin-left: 30px;
+    }    
+    .name_menu_toggle {
+        justify-content: space-between;
+    }
+    .name-hero {
+        font-size: 3rem;
+    }
+    .toggle {
+        margin-right: 0%;
+    }
+}
 @media screen and (min-width: 800px) {
     .header-container {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
+    .logo {
+        margin-left: calc(100%/9);
+    }
     .name_menu_toggle {
         justify-content: space-between;
         display: flex;
         align-items: center;
-        width: 70%;
+        width: 60%;
     }
-    .name-toggle-lang {
-        width: 50%;
+    .name-menu {
+        display: flex;
+        flex-direction: column;
     }
-    .name {
-        /*margin: 50px;
-        padding-right: 100px;*/
+    .name-hero {
+        font-size: 4rem;
     }
-    .menu {
-        width: 25%;
+    .toggle {
+        flex-direction: row-reverse;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+    }
+    .light {
+        padding: 0%;
+    }
+    .dark {
+        padding: 0%;
+    }
+    .en, .fr {
+        font-size: 1.5rem;
     }
 }

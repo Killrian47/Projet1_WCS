@@ -1,0 +1,18 @@
+
+.dark {
+    display: none !important;
+}
+
+.dark-thema .name p {
+    color: var(--primary-color);
+}
+.dark-thema main {
+    background-color: var(--background-darken);
+    color: var(--secondary-color);
+}
+.dark-thema .dark {
+    display: block !important;
+}
+.dark-thema .light {
+    display: none;
+}
