@@ -11,7 +11,7 @@
     <div> <h2> Clients feedback </h2> </div>
 
     <div class="clients"> 
-        <div class="Batman">
+        <div class="batman">
             <h3> Batman</h3>
             <p> This guy is awesome. Also, I'm Batman. </p>
         </div>
