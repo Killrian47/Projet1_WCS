@@ -37,6 +37,19 @@
                 ?>
                 </ul>
             </div>
+            <div class="hobbies">
+                <h2 class="main-blocks-titles">
+                    <span class="first-letter">H</span>obbies
+                </h2>
+                <ul>
+                <?php
+                foreach ($hobbiesEN as $hobbie) {
+                    echo ("<li class='hobbies-en-items'>$hobbie</li>");
+                };
+                ?>
+                </ul>
+
+            </div>
             <div class="common-questions-container">
                 <h2 class="main-blocks-titles">
                     <span class="first-letter">C</span>ommon questions
@@ -55,19 +68,7 @@
                 <a class="contact-btn" href="">Contact me</a>
             </div>
             
-            <div class="hobbies">
-                <h2 class="main-blocks-titles">
-                    <span class="first-letter">H</span>obbies
-                </h2>
-                <ul>
-                <?php
-                foreach ($hobbiesEN as $hobbie) {
-                    echo ("<li class='hobbies-en-items'>$hobbie</li>");
-                };
-                ?>
-                </ul>
-
-            </div>
+       
         </section>
         <?php 
     include 'partie3Helene.php'
