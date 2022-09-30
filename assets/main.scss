@@ -7,11 +7,11 @@
 }
 $title-blocks-color:#A80F14;
 $title-head-color:#DBAB64;
-$background-color:#ff040422;
+$background-color:#0471ff22;
 $white:white;
 $black:black;
-$background-darken:rgba(78, 0, 0, 0.293);
-$hover-background:rgb(169, 56, 56);
+$background-darken:rgba(70, 34, 78, 0.1333333333);
+$hover-background:rgb(56, 58, 169);
 
 .grid-central {
     display:flex;
@@ -32,15 +32,14 @@ $hover-background:rgb(169, 56, 56);
         background-color:$background-darken;
     }
 }
-.experiences {
-        background-color:$background-color;      
-    }
+
 .skills {
     grid-column-start:1;
     grid-column-end:1;
     grid-row-start:2;
     grid-row-end:3;
     border-top:3px solid $title-blocks-color;
+    background-color:$background-color;
 }
 .hobbies {
     grid-column-start:1;
@@ -54,7 +53,6 @@ $hover-background:rgb(169, 56, 56);
     grid-column-end:4;
     grid-row-start:1;
     grid-row-end:4;
-    background-color:$background-color;
 }
 .main-blocks-titles {
     font-size:clamp(16px,4vw,2rem);
@@ -97,6 +95,7 @@ ul {
     line-height:32px;
     text-decoration:none;
     color:black;
+    background-color:$background-color;
     &:hover {
         background-color:$background-darken;
         color:$black;
