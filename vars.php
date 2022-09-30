@@ -56,7 +56,7 @@ $experiencesEN=[
 ];
 
 $questionsEN=[
-    'Why makes you different from all the superheroes ?',
+    'What makes you different from all the superheroes ?',
     'You said you can fly. But how fast ?',
     'Let\'s say I need you, right now. How can I contact you ?',
     'Considering your powerness, are you ready to work in a team ?',
@@ -70,7 +70,7 @@ $textHoverEN=[
     "555LLorem ipsum dolor sit amet consectetur",
 ];
 $answersEN=[
-    'The main difference is that I don\' need any armor, any weapon, any substances, to get my powers. This makes me more efficient than any other superhero, and reduces costs.',
+    'The main difference is that I don\' need any armor, weapon, or substances to get my powers. This makes me more efficient than any other superhero, and reduces costs.',
     'I can fly a thousand time faster than the speed of light. Einstein would have gone mad, if he knew me.',
     'You can simply ask out loud for my help, I will hear you, and in a split second I will be by your side.',
     'Being in a team makes you stronger. No matter how fast or strong I can be, nothing replaces teamwork. I am ready to be fully committed into a team.',

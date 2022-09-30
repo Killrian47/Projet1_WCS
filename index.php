@@ -37,6 +37,24 @@
                 ?>
                 </ul>
             </div>
+            <div class="common-questions-container">
+                <h2 class="main-blocks-titles">
+                    <span class="first-letter">C</span>ommon questions
+                </h2>
+                <div class="question-answer-block">
+                    <?php
+                for ($i=0;$i<count($questionsEN);$i++) {
+                    echo ("<div class='question-block$i'>");
+                    echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
+                    echo ("<btn class='button$i'>+</btn>");
+                    echo ("</div>");
+                    echo ("<p class='answer$i'>$answersEN[$i]</p>");
+                };
+                ?>
+                </div>
+                <a class="contact-btn" href="">Contact me</a>
+            </div>
+            
             <div class="hobbies">
                 <h2 class="main-blocks-titles">
                     <span class="first-letter">H</span>obbies
@@ -50,24 +68,6 @@
                 </ul>
 
             </div>
-            <div class="common-questions-container">
-                <h2 class="main-blocks-titles">
-                    <span class="first-letter">C</span>ommon questions
-                </h2>
-                <div class="question-answer-block">
-                <?php
-                for ($i=0;$i<count($questionsEN);$i++) {
-                    echo ("<div class='question-block$i'>");
-                    echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
-                    echo ("<p class='button$i'> + </p>");
-                    echo ("</div>");
-                    echo ("<p class='answer$i'>$answersEN[$i]</p>");
-                    };
-                ?>
-                </div>
-                <a class="contact-btn" href="">Contact me</a>
-            </div>
-
         </section>
         <?php 
     include 'partie3Helene.php'
