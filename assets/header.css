@@ -1,5 +1,4 @@
 a {
-    color: black;
     text-decoration: none;
 }
 .header-container {
@@ -9,6 +8,7 @@ a {
     background-color: var(--light);
     color: var(--title-head-color);
 }
+
 .logo {
     height: 116px;
     width: 154px;
@@ -48,6 +48,9 @@ a {
     font-size: 1.5rem;
     animation: slide-to-bottom 1s;
 }
+.menu a {
+    color: black;
+}
 .toggle {
     display: flex;
     flex-direction: column;
@@ -66,6 +69,9 @@ a {
     font-size: 2rem;
     margin-right: 20px;
     text-align: right;
+}
+.en, .fr {
+    color: var(--title-head-color);
 }
 
 @keyframes slide-to-right {
@@ -122,7 +128,19 @@ a {
     .name-hero {
         font-size: 4rem;
     }
-    .menu {
-        
+    .toggle {
+        flex-direction: row-reverse;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+    }
+    .light {
+        padding: 0%;
+    }
+    .dark {
+        padding: 0%;
+    }
+    .en, .fr {
+        font-size: 1.5rem;
     }
 }
