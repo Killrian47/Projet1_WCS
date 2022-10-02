@@ -14,7 +14,7 @@ main {
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    background-color: white;
+    background-color:var(--light);
     border-radius: 10px;
     box-shadow:3px 3px 5px black;
 }
@@ -177,7 +177,7 @@ main {
     visibility: hidden;
     opacity: 0;
     width: 140px;
-    background-color: $white;
+    background-color: var(--white);
     border:2px solid var(--title-blocks-color);
     color: var(--dark);
     text-align: center;

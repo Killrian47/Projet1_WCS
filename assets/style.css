@@ -24,6 +24,7 @@
     --light: white;
     --dark: #0e1215;
     --body-background-color:#012865;
+    --white:white;
 }
 html {
     width: 100%;
@@ -31,10 +32,12 @@ html {
 body {
     height: 100vh;
     width:100%;
-    background-color:#012865;
+}
+
+body{background-color:var( --body-background-color);
 }
 .dark-thema {
-    --background-color:#010e20eb;
-}
-body{background-color:var( --body-background-color);
+    --body-background-color:var(--dark);
+    --light: #012865;
+
 }

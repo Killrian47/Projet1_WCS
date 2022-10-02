@@ -4,36 +4,42 @@
 // Vars en français
 
 $hobbiesFR=[
-    "Loisir 1",
-    "Loisir 1",
-    "Loisir 1",
-    "Loisir 1",
-    "Loisir 1",
+    "Jouer aux échecs",
+    "Travail du métal",
+    "Scrapbooking",
 ];
-$skillsFR=[];
-$experiencesFR=[];
+$skillsFR=["Tir de rayon laser par les yeux",
+"Vision à rayons X",
+"Vol",
+"Force extaordinaire",
+"Capacité de camouflage exceptionnelle",
+"Peau invulnérable",];
+$experiencesFR=['Travail avec des équipes de super héros',
+'Protection de la Terre contre de nombreuses menaces'
+];
 
 $questionsFR=[
-    'Test de question 1 ?',
-    'Test de question 2 ?',
-    'Test de question 3 ?',
-    'Test de question 4 ?',
-    'Test de question 5 ?',
+    'Qu\'est-ce qui vous différencie des autres super héros ?',
+    'Vous dîtes que vous pouvez voler, mais à quelle vitesse ?',
+    'Si j\'ai besoin urgemment de votre aide, comment puis-je vous contacter ?',
+    'Compte-tenu de votre puissance, êtes-vous prêt à vous mettre au service d\'une équipe',
+    'Qui est Martha ?',
 
 ];
-
+$textHoverFR=[
+    "La Justice League, La Legion des Super Héros,...",
+    "Le général Zod, Lex Luthor, Bizarro,..",
+    "333LLorem ipsum dolor sit amet consectetur",
+    "444LLorem ipsum dolor sit amet consectetur",
+    "555LLorem ipsum dolor sit amet consectetur",
+];
 $answersFR=[
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Voluptatibus exercitationem ipsum aliquid amet, veritatis 
-    modi eius consequuntur at aperiam voluptas molestiae 
-    accusantium nam deleniti nobis dolor in ut itaque eveniet!',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem',
-    'LLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem'
+    'La différence principale est que je n\ai besoin d\' aucune armure, arme, ou substance pour obtenir mes pouvoirs. Je suis donc plus efficient, et réduit les coûts.',
+    'Je peux voler mille fois plus rapidement que la vitesse de la lumière. Si Einstein l\'avait su, il en serait devenu fou !',
+    'Vous pouvez simplement appeler mon nom à voix haute, je vous entendrai où que je sois, et serai à vos côtés en une fraction de seconde.',
+    'Faire partie d\'une équipe vous rend plus fort. Quelle que soit ma force ou ma vitesse, rien ne remplace un travail d\'équipe. Je suis prêt à m\'investir à 100% dans un groupe.',
+    'Comment connaissez-vous son nom !? MAAAAAARTHAAAAAA',
 ];
-
-
 
 // Vars en anglais
 
