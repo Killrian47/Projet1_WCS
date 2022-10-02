@@ -1,13 +1,14 @@
-@font-face {
-  font-family: "pauls_super_fontregular";
-  src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
+main {
+  margin-top: 20px;
 }
+
 .grid-central {
   display: flex;
   flex-direction: column;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 95%;
+  margin: auto;
 }
 
 .experiences, .skills, .hobbies, .common-questions-container {
@@ -15,15 +16,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid #A80F14;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
 }
 
-.experiences-items {
-  width: 100%;
-  text-decoration: none;
-}
 .experiences-items:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
+  background-color: var(--background-darken);
 }
 
 .skills {
@@ -31,8 +30,6 @@
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 3;
-  border-top: 3px solid #A80F14;
-  background-color: rgba(4, 113, 255, 0.1333333333);
 }
 
 .hobbies {
@@ -40,7 +37,6 @@
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: rgba(4, 113, 255, 0.1333333333);
 }
 
 .common-questions-container {
@@ -54,8 +50,7 @@
   font-size: clamp(16px, 4vw, 2rem);
   font-family: "Lato", sans-serif;
   text-align: center;
-  font-weight: lighter;
-  color: #A80F14;
+  color: var(--title-blocks-color);
   padding: 8px;
   line-height: 24px;
   font-weight: bold;
@@ -68,12 +63,10 @@
   margin-right: -4px;
 }
 
-ul {
+.hobbies-items, .experiences-items, .skills-items {
   padding: 0;
-}
-ul li {
   list-style: none;
-  color: black;
+  color: var(--dark);
   text-align: center;
   margin-bottom: 5px;
   line-height: 24px;
@@ -93,11 +86,12 @@ ul li {
   line-height: 32px;
   text-decoration: none;
   color: black;
-  background-color: rgba(4, 113, 255, 0.1333333333);
 }
 .contact-btn:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
-  color: black;
+  background-color: var(--title-blocks-color);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: var(--dark);
 }
 
 @-webkit-keyframes answer-show {
@@ -148,7 +142,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 36px;
-  color: black;
+  color: var(--dark);
   font-size: clamp(14px, 3vw, 1.5rem);
   font-weight: lighter;
 }
@@ -202,7 +196,7 @@ ul li {
   line-height: 2em;
 }
 .question-block0:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
+  background-color: var(--background-darken);
 }
 
 .question1 {
@@ -212,7 +206,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 36px;
-  color: black;
+  color: var(--dark);
   font-size: clamp(14px, 3vw, 1.5rem);
   font-weight: lighter;
 }
@@ -266,7 +260,7 @@ ul li {
   line-height: 2em;
 }
 .question-block1:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
+  background-color: var(--background-darken);
 }
 
 .question2 {
@@ -276,7 +270,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 36px;
-  color: black;
+  color: var(--dark);
   font-size: clamp(14px, 3vw, 1.5rem);
   font-weight: lighter;
 }
@@ -330,7 +324,7 @@ ul li {
   line-height: 2em;
 }
 .question-block2:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
+  background-color: var(--background-darken);
 }
 
 .question3 {
@@ -340,7 +334,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 36px;
-  color: black;
+  color: var(--dark);
   font-size: clamp(14px, 3vw, 1.5rem);
   font-weight: lighter;
 }
@@ -394,7 +388,7 @@ ul li {
   line-height: 2em;
 }
 .question-block3:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
+  background-color: var(--background-darken);
 }
 
 .question4 {
@@ -404,7 +398,7 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 36px;
-  color: black;
+  color: var(--dark);
   font-size: clamp(14px, 3vw, 1.5rem);
   font-weight: lighter;
 }
@@ -458,7 +452,7 @@ ul li {
   line-height: 2em;
 }
 .question-block4:hover {
-  background-color: rgba(70, 34, 78, 0.1333333333);
+  background-color: var(--background-darken);
 }
 
 .hovertext {
@@ -471,8 +465,8 @@ ul li {
   opacity: 0;
   width: 140px;
   background-color: white;
-  border: 2px solid #A80F14;
-  color: black;
+  border: 2px solid var(--title-blocks-color);
+  color: var(--dark);
   text-align: center;
   border-radius: 5px;
   padding: 5px 0;
@@ -493,30 +487,11 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .skills, .hobbies, .experiences {
-    border-top: 1px solid #A80F14;
-    border-right: 1px solid #A80F14;
-    background-color: white;
-  }
-  .experiences, .common-questions-container {
-    border-top: 3px solid #A80F14;
-  }
-  .experiences, .hobbies {
-    background-color: rgba(4, 113, 255, 0.1333333333);
-  }
 }
 @media screen and (min-width: 1200px) {
   .grid-central {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .skills, .hobbies, .experiences {
-    border-top: 1px solid #A80F14;
-    border-right: 1px solid #A80F14;
-    background-color: white;
-  }
-  .experiences, .common-questions-container {
-    border-top: 3px solid #A80F14;
   }
   .question-answer-block {
     line-height: 48px;
@@ -524,7 +499,9 @@ ul li {
   .common-questions-container {
     gap: 48px;
   }
-  .experiences, .hobbies {
-    background-color: rgba(4, 113, 255, 0.1333333333);
+  main {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

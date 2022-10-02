@@ -44,7 +44,7 @@
                 <ul>
                 <?php
                 foreach ($hobbiesEN as $hobbie) {
-                    echo ("<li class='hobbies-en-items'>$hobbie</li>");
+                    echo ("<li class='hobbies-items'>$hobbie</li>");
                 };
                 ?>
                 </ul>
@@ -59,7 +59,7 @@
                 for ($i=0;$i<count($questionsEN);$i++) {
                     echo ("<div class='question-block$i'>");
                     echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
-                    echo ("<btn class='button$i'>+</btn>");
+                    echo ("<button class='button$i'>+</button>");
                     echo ("</div>");
                     echo ("<p class='answer$i'>$answersEN[$i]</p>");
                 };
