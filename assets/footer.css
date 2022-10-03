@@ -1,0 +1,14 @@
+html {
+    
+}
+.footer_bis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.up {
+    font-size: 1.5rem;
+}
+a {
+    color: black;
+}

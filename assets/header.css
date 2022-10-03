@@ -113,7 +113,7 @@ a {
         width: 100%;
     }
     .logo {
-        margin-left: calc(100%/9);
+        margin-left: 50px;
     }
     .name_menu_toggle {
         justify-content: space-between;
