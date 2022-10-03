@@ -1,14 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Curriculum Vitae de Superman</title>
+</head>
+<body>
     <?php
     include 'header.php'
     ?>
     <main>
         <section class="grid-central">
             <div class="skills">
-                <h2 class="main-blocks-titles"><span class="first-letter">S</span>kills</h2>
+                <h2 class="main-blocks-titles"><span class="first-letter">C</span>ompétences</h2>
                 <ul>
                 <?php
                 include 'vars.php';
-                foreach ($skillsEN as $skill) {
+                foreach ($skillsFR as $skill) {
                     echo ("<li class='skills-items'>$skill</li>");
                 }
                 ?>
@@ -22,21 +33,21 @@
                 </div>
                 <ul>
                 <?php
-                for ($i=0;$i<count($experiencesEN);$i++) {
+                for ($i=0;$i<count($experiencesFR);$i++) {
                     echo ("<li class='experiences-items'>");
-                    echo ("$experiencesEN[$i]</li>");
-                    echo ("<p class='experience-details'>$experienceDetailsEN[$i]</p>");
+                    echo ("$experiencesFR[$i]</li>");
+                    echo ("<p class='experience-details'>$experienceDetailsFR[$i]</p>");
                 };
                 ?>
                 </ul>
             </div>
             <div class="hobbies">
                 <h2 class="main-blocks-titles">
-                    <span class="first-letter">H</span>obbies
+                    <span class="first-letter">L</span>oisirs
                 </h2>
                 <ul>
                 <?php
-                foreach ($hobbiesEN as $hobbie) {
+                foreach ($hobbiesFR as $hobbie) {
                     echo ("<li class='hobbies-items'>$hobbie</li>");
                 };
                 ?>
@@ -45,20 +56,20 @@
             </div>
             <div class="common-questions-container">
                 <h2 class="main-blocks-titles">
-                    <span class="first-letter">C</span>ommon questions
+                    <span class="first-letter">Q</span>uestions fréquentes
                 </h2>
                 <div class="question-answer-block">
                     <?php
-                for ($i=0;$i<count($questionsEN);$i++) {
+                for ($i=0;$i<count($questionsFR);$i++) {
                     echo ("<div class='question-block$i'>");
-                    echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
+                    echo ("<h3 class='question$i'>$questionsFR[$i]</h3>");
                     echo ("<i class='fas fa-plus button$i'></i>");
                     echo ("</div>");
-                    echo ("<p class='answer$i'>$answersEN[$i]</p>");
+                    echo ("<p class='answer$i'>$answersFR[$i]</p>");
                 };
                 ?>
                 </div>
-                <a class="contact-btn" href="">Contact me</a>
+                <a class="contact-btn" href="">Contactez moi</a>
             </div>
             
        
@@ -67,6 +78,6 @@
     include 'partie3Helene.php'
     ?>
     </main>
-    <?php
-    include 'footer.php';
-    ?>
+    <script src="script.js"></script>
+</body>
+</html>

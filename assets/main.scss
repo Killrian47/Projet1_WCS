@@ -1,35 +1,27 @@
-@font-face {
-    font-family: 'pauls_super_fontregular';
-    src: url('webfontkit-20220927-034658/pauls_super_font-webfont.woff') format('woff2'),
-         url('webfontkit-20220927-034658/pauls_super_font-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
+main {
+    margin-top:20px;
 }
-$title-blocks-color:#A80F14;
-$title-head-color:#DBAB64;
-$background-color:#0471ff22;
-$white:white;
-$black:black;
-$background-darken:rgba(70, 34, 78, 0.1333333333);
-$hover-background:rgb(56, 58, 169);
-
 .grid-central {
     display:flex;
     flex-direction:column;
     grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    width:95%;
+    margin:auto;
 }
 .experiences, .skills, .hobbies, .common-questions-container {
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
-    border-top:1px solid $title-blocks-color;
+    background-color:var(--light);
+    border-radius: 10px;
+    box-shadow:3px 3px 5px black;
 }
+
 .experiences-items {
-    width:100%;
-    text-decoration:none;
     &:hover {
-        background-color:$background-darken;
+        background-color:var(--background-darken);
     }
 }
 
@@ -38,15 +30,12 @@ $hover-background:rgb(56, 58, 169);
     grid-column-end:1;
     grid-row-start:2;
     grid-row-end:3;
-    border-top:3px solid $title-blocks-color;
-    background-color:$background-color;
 }
 .hobbies {
     grid-column-start:1;
     grid-column-end:1;
     grid-row-start:3;
     grid-row-end:4;
-    background-color:$background-color; 
 }
 .common-questions-container {
     grid-column-start:2;
@@ -58,8 +47,7 @@ $hover-background:rgb(56, 58, 169);
     font-size:clamp(16px,4vw,2rem);
     font-family: "Lato", sans-serif; 
     text-align:center;
-    font-weight: lighter;
-    color:$title-blocks-color;
+    color:var(--title-blocks-color);
     padding:8px;
     line-height:24px;
     font-weight: bold;
@@ -72,15 +60,13 @@ $hover-background:rgb(56, 58, 169);
         
     }
 }
-ul {
+.hobbies-items, .experiences-items, .skills-items {
     padding:0;
-    li {
     list-style:none;
-    color:$black;
+    color:var(--dark);
     text-align:center;
     margin-bottom:5px;
     line-height: 24px;
-    }
 }
 .question-answer-block {
     display:flex;
@@ -95,10 +81,12 @@ ul {
     line-height:32px;
     text-decoration:none;
     color:black;
-    background-color:$background-color;
+
     &:hover {
-        background-color:$background-darken;
-        color:$black;
+        background-color:var(--title-blocks-color);
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        color:var(--dark);
     }
 }
 @keyframes answer-show {
@@ -117,7 +105,7 @@ ul {
     text-align: center;
     vertical-align: middle;
     line-height: 36px;
-    color:$black;
+    color:var(--dark);
     font-size:clamp(14px,3vw,1.5rem);
     font-weight:lighter;
     @media screen and (min-width:1200px) {
@@ -160,7 +148,7 @@ ul {
     align-items:center;
     line-height: 2em;
     &:hover {
-        background-color:$background-darken;
+        background-color:var(--background-darken);
     }
 }
 
@@ -179,60 +167,18 @@ ul {
     }
 }
 
-// Test de text en hover
-
-.hovertext {
-    position: relative;
-  }
-  .hovertext:before {
-    content: attr(data-hover);
-    visibility: hidden;
-    opacity: 0;
-    width: 140px;
-    background-color: $white;
-    border:2px solid $title-blocks-color;
-    color: $black;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    transition: opacity 0.5s ease-in-out;
-    position: absolute;
-    z-index: 1;
-    left: 70%;
-    top: 110%;
-  }
-  
-  .hovertext:hover:before {
-    opacity: 1;
-    visibility: visible;
-  }
+// Responsive
 
   @media screen and (min-width:800px) {
     .grid-central {
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
     }
-    .skills, .hobbies, .experiences {
-        border-top:1px solid $title-blocks-color;
-        border-right:1px solid $title-blocks-color;
-    }
-    .experiences, .common-questions-container  {
-        border-top:3px solid $title-blocks-color;
-
-    }
-
   }
   @media screen and (min-width:1200px) {
     .grid-central {
         display:grid;
         grid-template-columns:1fr 1fr;
-    }
-    .skills, .hobbies, .experiences {
-        border-top:1px solid $title-blocks-color;
-        border-right:1px solid $title-blocks-color;
-    }
-    .experiences, .common-questions-container  {
-        border-top:3px solid $title-blocks-color;
     }
     .question-answer-block {
         line-height:48px;
@@ -240,5 +186,41 @@ ul {
     .common-questions-container {
         gap:48px;
     }
-    
+    main {
+        width:75%;
+        margin:auto;
+        margin-top:20px;
+    }
+  }
+
+  .experiences-header {
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+  }
+  .experience-button {
+    text-align:center;
+    vertical-align: center;
+    line-height:45px;
+  }
+  .experience-details {
+    line-height:0px;
+    opacity:0;
+    animation-name:answer-hide;
+    animation-duration:0.5s;
+    font-size:0.7em;
+    text-align:center;
+    padding:0;
+    color:var(--dark);
+    &.showDetails {
+        animation-name:answer-show;
+        animation-duration:0.5s;
+        margin-bottom:5px;
+        line-height: 24px;
+        opacity:1;
+
+    }
+  }
+  .fas {
+    color:var(--body-background-color);
   }
