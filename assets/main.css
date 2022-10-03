@@ -14,7 +14,7 @@ main {
 .experiences, .skills, .hobbies, .common-questions-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--light);
   border-radius: 10px;
@@ -80,18 +80,26 @@ main {
   width: 90%;
 }
 
-.contact-btn {
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
   width: 100%;
   text-align: center;
-  line-height: 32px;
   text-decoration: none;
   color: black;
+  line-height: 32px;
 }
-.contact-btn:hover {
+.contact-container:hover {
   background-color: var(--title-blocks-color);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   color: var(--dark);
+}
+
+.fa-envelope {
+  color: var(--body-background-color);
 }
 
 @-webkit-keyframes answer-show {
@@ -146,7 +154,7 @@ main {
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .question0 {
     line-height: 32px;
   }
@@ -172,7 +180,7 @@ main {
   line-height: 24px;
   opacity: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .answer0.answerShow {
     line-height: 24px;
   }
@@ -210,7 +218,7 @@ main {
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .question1 {
     line-height: 32px;
   }
@@ -236,7 +244,7 @@ main {
   line-height: 24px;
   opacity: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .answer1.answerShow {
     line-height: 24px;
   }
@@ -274,7 +282,7 @@ main {
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .question2 {
     line-height: 32px;
   }
@@ -300,7 +308,7 @@ main {
   line-height: 24px;
   opacity: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .answer2.answerShow {
     line-height: 24px;
   }
@@ -338,7 +346,7 @@ main {
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .question3 {
     line-height: 32px;
   }
@@ -364,7 +372,7 @@ main {
   line-height: 24px;
   opacity: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .answer3.answerShow {
     line-height: 24px;
   }
@@ -402,7 +410,7 @@ main {
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .question4 {
     line-height: 32px;
   }
@@ -428,7 +436,7 @@ main {
   line-height: 24px;
   opacity: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .answer4.answerShow {
     line-height: 24px;
   }

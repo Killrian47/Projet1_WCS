@@ -58,7 +58,9 @@
                 };
                 ?>
                 </div>
-                <a class="contact-btn" href="">Contact me</a>
+                <div class='contact-container'>
+                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form.php">Contact me</a><i class="fas fa-envelope"></i>
+                </div>
             </div>
             
        

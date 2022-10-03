@@ -12,7 +12,7 @@ main {
 .experiences, .skills, .hobbies, .common-questions-container {
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     background-color:var(--light);
     border-radius: 10px;
@@ -75,12 +75,16 @@ main {
     align-items:center;
     width:90%;
 }
-.contact-btn {
+.contact-container {
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    align-items:center;
     width:100%;
     text-align:center;
-    line-height:32px;
     text-decoration:none;
     color:black;
+    line-height: 32px;
 
     &:hover {
         background-color:var(--title-blocks-color);
@@ -88,6 +92,9 @@ main {
         border-bottom-left-radius:10px;
         color:var(--dark);
     }
+}
+.fa-envelope {
+    color:var(--body-background-color);
 }
 @keyframes answer-show {
     0% {line-height:0px;
@@ -108,7 +115,7 @@ main {
     color:var(--dark);
     font-size:clamp(0.8em,3vw,16px);
     font-weight:lighter;
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1024px) {
         line-height:32px;
     }
 }
@@ -127,7 +134,7 @@ main {
         animation-duration:0.5s;
         line-height: 24px;
         opacity:1;
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1024px) {
             line-height:24px;
         }
     }
