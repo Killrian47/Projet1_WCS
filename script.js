@@ -1,4 +1,4 @@
-let toggle = document.querySelector('.toggle')
+let toggle = document.querySelector('.toggles')
 let body = document.querySelector('body')
 
 toggle.addEventListener('click', function() {

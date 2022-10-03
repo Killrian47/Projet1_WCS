@@ -1,12 +1,15 @@
 a {
     text-decoration: none;
 }
+.dark-thema .menu a{
+    color: white;
+}
 .header-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--light);
-    color: var(--title-head-color);
+    color: var(--title-blocks-color);
 }
 
 .logo {
@@ -16,12 +19,22 @@ a {
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.logo img {
+.logo-dark, .logo-light {
     width: 154px;
     height: 116px;
     animation: slide-to-right 1s ease-out;
 }
+.logo-dark {
+    display: none;
+}
+.dark-thema .logo-dark {
+    display: block;
+}
+.dark-thema .logo-light {
+    display: none;
+}
 .name_menu_toggle {
+    color: var(--title-blocks-color);
     grid-row-start: 1;
     grid-row-end: 3;
     display: flex;
@@ -37,6 +50,20 @@ a {
     font-size: 2rem;
     text-align: center;
     text-shadow: black 2px 0px ;
+    animation: slide-to-right 1s ease-out;
+}
+.name-hero-bis {
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: black 2px 0px ;
+    display: none;
+}
+.dark-thema .name-hero {
+    display: none;
+}
+.dark-thema .name-hero-bis {
+    display: block;
     animation: slide-to-right 1s ease-out;
 }
 .menu {
@@ -69,9 +96,10 @@ a {
     font-size: 2rem;
     margin-right: 20px;
     text-align: right;
+    color: var(--title-blocks-color);
 }
 .en, .fr {
-    color: var(--title-head-color);
+    color: var(--title-blocks-color);
 }
 
 @keyframes slide-to-right {
@@ -99,11 +127,20 @@ a {
     .name_menu_toggle {
         justify-content: space-between;
     }
-    .name-hero {
+    .name-hero, .name-hero-bis {
         font-size: 3rem;
     }
     .toggle {
-        margin-right: 0%;
+        flex-direction: row-reverse;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+    }
+    .toggles {
+        margin-top: 14px;
+    }
+    .en, .fr {
+        font-size: 1.5rem;
     }
 }
 @media screen and (min-width: 800px) {
@@ -128,11 +165,17 @@ a {
     .name-hero {
         font-size: 4rem;
     }
+    .name-hero-bis {
+        font-size: 4rem;
+    }
     .toggle {
         flex-direction: row-reverse;
         width: 30%;
         height: 100%;
         align-items: center;
+    }
+    .toggles {
+        margin: 0%;
     }
     .light {
         padding: 0%;
