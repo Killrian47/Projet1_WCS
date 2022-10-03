@@ -15,7 +15,7 @@
         <nav class="header-container">
 
             <div class="logo">
-                <img src="/assets/logo2.png" alt="This is THE logo">
+                <img src="/assets/logo.png" alt="This is THE logo">
             </div>
 
             <div class="name_menu_toggle">

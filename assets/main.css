@@ -141,14 +141,14 @@ main {
   width: 80%;
   text-align: center;
   vertical-align: middle;
-  line-height: 36px;
+  line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
 @media screen and (min-width: 1200px) {
   .question0 {
-    line-height: 50px;
+    line-height: 32px;
   }
 }
 
@@ -161,7 +161,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.8em, 2vw, 1.5rem);
+  font-size: clamp(0.6em, 2.5vw, 14px);
 }
 .answer0.answerShow {
   display: block;
@@ -174,7 +174,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .answer0.answerShow {
-    line-height: 50px;
+    line-height: 24px;
   }
 }
 
@@ -205,14 +205,14 @@ main {
   width: 80%;
   text-align: center;
   vertical-align: middle;
-  line-height: 36px;
+  line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
 @media screen and (min-width: 1200px) {
   .question1 {
-    line-height: 50px;
+    line-height: 32px;
   }
 }
 
@@ -225,7 +225,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.8em, 2vw, 1.5rem);
+  font-size: clamp(0.6em, 2.5vw, 14px);
 }
 .answer1.answerShow {
   display: block;
@@ -238,7 +238,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .answer1.answerShow {
-    line-height: 50px;
+    line-height: 24px;
   }
 }
 
@@ -269,14 +269,14 @@ main {
   width: 80%;
   text-align: center;
   vertical-align: middle;
-  line-height: 36px;
+  line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
 @media screen and (min-width: 1200px) {
   .question2 {
-    line-height: 50px;
+    line-height: 32px;
   }
 }
 
@@ -289,7 +289,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.8em, 2vw, 1.5rem);
+  font-size: clamp(0.6em, 2.5vw, 14px);
 }
 .answer2.answerShow {
   display: block;
@@ -302,7 +302,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .answer2.answerShow {
-    line-height: 50px;
+    line-height: 24px;
   }
 }
 
@@ -333,14 +333,14 @@ main {
   width: 80%;
   text-align: center;
   vertical-align: middle;
-  line-height: 36px;
+  line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
 @media screen and (min-width: 1200px) {
   .question3 {
-    line-height: 50px;
+    line-height: 32px;
   }
 }
 
@@ -353,7 +353,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.8em, 2vw, 1.5rem);
+  font-size: clamp(0.6em, 2.5vw, 14px);
 }
 .answer3.answerShow {
   display: block;
@@ -366,7 +366,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .answer3.answerShow {
-    line-height: 50px;
+    line-height: 24px;
   }
 }
 
@@ -397,14 +397,14 @@ main {
   width: 80%;
   text-align: center;
   vertical-align: middle;
-  line-height: 36px;
+  line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
   font-weight: lighter;
 }
 @media screen and (min-width: 1200px) {
   .question4 {
-    line-height: 50px;
+    line-height: 32px;
   }
 }
 
@@ -417,7 +417,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.8em, 2vw, 1.5rem);
+  font-size: clamp(0.6em, 2.5vw, 14px);
 }
 .answer4.answerShow {
   display: block;
@@ -430,7 +430,7 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .answer4.answerShow {
-    line-height: 50px;
+    line-height: 24px;
   }
 }
 

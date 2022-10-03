@@ -52,7 +52,7 @@
                 for ($i=0;$i<count($questionsEN);$i++) {
                     echo ("<div class='question-block$i'>");
                     echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
-                    echo ("<i class='fas fa-plus plus-buttons button$i'></i>");
+                    echo ("<i class='fas fa-minus fa-plus plus-buttons button$i questions-buttons'></i>");
                     echo ("</div>");
                     echo ("<p class='answer$i'>$answersEN[$i]</p>");
                 };
