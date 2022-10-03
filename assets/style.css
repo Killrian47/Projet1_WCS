@@ -3,6 +3,8 @@
 @import "projet3Helene.css";
 @import "footer.css";
 @import url('dark-mode.css');
+@import "form.css";
+@import "thanks.css";
 @font-face {
     font-family: "pauls_super_fontregular";
     src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");

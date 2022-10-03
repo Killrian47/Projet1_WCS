@@ -1,0 +1,13 @@
+.thanks-message {
+    width:70vw;
+    background-color:white;
+    margin:auto;
+    margin-top:20px;
+    border-radius:10px;
+    line-height: 36px;
+    text-align: center;
+}
+.thanks-message p {
+    width:75%;
+    margin:auto;
+}
