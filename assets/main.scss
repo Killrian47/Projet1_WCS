@@ -175,7 +175,7 @@ main {
         grid-template-columns:1fr 1fr 1fr;
     }
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1024px) {
     .grid-central {
         display:grid;
         grid-template-columns:1fr 1fr;
@@ -223,4 +223,13 @@ main {
   }
   .plus-buttons {
     color:var(--body-background-color);
+  }
+  .dark-thema {
+    .skills-items, .experiences-items, .experience-details, .hobbies-items, .questions, .answers {
+        color:white;
+    }
+    .plus-buttons {
+        color:white;
+    }
+    
   }

@@ -36,9 +36,11 @@ body {
     width:100%;
 }
 
-body{background-color:var( --body-background-color);
+body{
+    background-color:var( --body-background-color);
 }
 .dark-thema {
     --body-background-color:var(--dark);
     --light: #012865;
 }
+
