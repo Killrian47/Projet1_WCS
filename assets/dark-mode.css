@@ -6,10 +6,10 @@
 .dark-thema .name p {
     color: var(--primary-color);
 }
-.dark-thema main {
+/* .dark-thema main {
     background-color: var(--background-darken);
     color: var(--secondary-color);
-}
+} */
 .dark-thema .dark {
     display: block !important;
 }
