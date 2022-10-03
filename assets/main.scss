@@ -167,34 +167,6 @@ main {
     }
 }
 
-// Test de text en hover
-
-.hovertext {
-    position: relative;
-  }
-  .hovertext:before {
-    content: attr(data-hover);
-    visibility: hidden;
-    opacity: 0;
-    width: 140px;
-    background-color: var(--white);
-    border:2px solid var(--title-blocks-color);
-    color: var(--dark);
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    transition: opacity 0.5s ease-in-out;
-    position: absolute;
-    z-index: 1;
-    left: 70%;
-    top: 110%;
-  }
-  
-  .hovertext:hover:before {
-    opacity: 1;
-    visibility: visible;
-  }
-
 // Responsive
 
   @media screen and (min-width:800px) {
@@ -219,4 +191,36 @@ main {
         margin:auto;
         margin-top:20px;
     }
+  }
+
+  .experiences-header {
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+  }
+  .experience-button {
+    text-align:center;
+    vertical-align: center;
+    line-height:45px;
+  }
+  .experience-details {
+    line-height:0px;
+    opacity:0;
+    animation-name:answer-hide;
+    animation-duration:0.5s;
+    font-size:0.7em;
+    text-align:center;
+    padding:0;
+    color:var(--dark);
+    &.showDetails {
+        animation-name:answer-show;
+        animation-duration:0.5s;
+        margin-bottom:5px;
+        line-height: 24px;
+        opacity:1;
+
+    }
+  }
+  .fas {
+    color:var(--body-background-color);
   }

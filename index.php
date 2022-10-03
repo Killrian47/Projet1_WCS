@@ -26,14 +26,18 @@
                 </ul>
             </div>
             <div class="experiences">
+                <div class="experiences-header">
+                <p></p>
                 <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperiences</h2>
+                <p><i class='fas fa-plus experience-button'></i></p>
+                </div>
                 <ul>
                 <?php
                 for ($i=0;$i<count($experiencesEN);$i++) {
                     echo ("<li class='experiences-items'>");
-                    echo ("<span class='hovertext' data-hover='$textHoverEN[$i]'>");
-                    echo ("$experiencesEN[$i]</span></li>");
-                }
+                    echo ("$experiencesEN[$i]</li>");
+                    echo ("<p class='experience-details'>$experienceDetailsEN[$i]</p>");
+                };
                 ?>
                 </ul>
             </div>
@@ -59,7 +63,7 @@
                 for ($i=0;$i<count($questionsEN);$i++) {
                     echo ("<div class='question-block$i'>");
                     echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
-                    echo ("<button class='button$i'>+</button>");
+                    echo ("<i class='fas fa-plus button$i'></i>");
                     echo ("</div>");
                     echo ("<p class='answer$i'>$answersEN[$i]</p>");
                 };

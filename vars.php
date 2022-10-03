@@ -68,7 +68,7 @@ $questionsEN=[
     'Considering your powerness, are you ready to work in a team ?',
     'Who is Martha ?',
 ];
-$textHoverEN=[
+$experienceDetailsEN=[
     "Justice League, The Legion of Superheroes,...",
     "Zod, Lex Luthor, Bizarro,..",
     "333LLorem ipsum dolor sit amet consectetur",

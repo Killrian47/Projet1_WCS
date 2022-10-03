@@ -59,7 +59,7 @@
                 for ($i=0;$i<count($questionsFR);$i++) {
                     echo ("<div class='question-block$i'>");
                     echo ("<h3 class='question$i'>$questionsFR[$i]</h3>");
-                    echo ("<button class='button$i'>+</button>");
+                    echo ("<i class='fas fa-plus button$i'></i>");
                     echo ("</div>");
                     echo ("<p class='answer$i'>$answersFR[$i]</p>");
                 };
