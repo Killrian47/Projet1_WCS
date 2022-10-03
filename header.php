@@ -15,7 +15,8 @@
         <nav class="header-container">
 
             <div class="logo">
-                <img src="/assets/logo2.png" alt="This is THE logo">
+                <img src="/assets/logo.png" class="logo-light" alt="This is THE logo">
+                <img src="/assets/logo_darkmode.png" class="logo-dark" alt="This is THE logo">
             </div>
 
             <div class="name_menu_toggle">
@@ -23,6 +24,7 @@
                 <div class="name-menu">
                     <div class="name">
                         <h2 class="name-hero">Superman</h2>
+                        <h2 class="name-hero-bis">Superman</h2>
                     </div>
 
                     <ul class="menu">
@@ -32,8 +34,11 @@
                     </ul>
                 </div>
                 <div class="toggle">
-                    <i class="fas fa-toggle-off light"></i>
-                    <i class="fas fa-toggle-on dark"></i>
+                    <div class="toggles">
+
+                        <i class="fas fa-toggle-off light"></i>
+                        <i class="fas fa-toggle-on dark"></i>
+                    </div>
                     <a href="/index-fr.php"><p class="fr">FR</p></a>
                     <a href="/index.php"><p class="en">EN</p></a>
                 </div>    

@@ -1,12 +1,27 @@
-.footer_bis {
+footer{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    margin: auto;
+    width: 90%;
+    
+}
+.footer_bis {   
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.up {
-    font-size: 1.5rem;
-    color:white;
+    height: 75px;
 }
 a {
     color: black;
+}
+.up {
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 800px) {
+    footer {
+        margin: auto;
+        width: 70%;
+    }
 }
