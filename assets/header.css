@@ -1,15 +1,18 @@
 a {
     text-decoration: none;
 }
+.dark-thema .menu a{
+    color: white;
+}
 .header-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--light);
-    color: var(--title-head-color);
+    color: var(--title-blocks-color);
 }
 
-.logo {
+.logo-light {
     height: 116px;
     width: 154px;
     grid-column-start: 1;
@@ -22,6 +25,7 @@ a {
     animation: slide-to-right 1s ease-out;
 }
 .name_menu_toggle {
+    color: var(--title-blocks-color);
     grid-row-start: 1;
     grid-row-end: 3;
     display: flex;
@@ -69,9 +73,10 @@ a {
     font-size: 2rem;
     margin-right: 20px;
     text-align: right;
+    color: var(--title-blocks-color);
 }
 .en, .fr {
-    color: var(--title-head-color);
+    color: var(--title-blocks-color);
 }
 
 @keyframes slide-to-right {

@@ -1,6 +1,7 @@
 @import "main.css";
 @import "header.css";
 @import "projet3Helene.css";
+@import url('footer.css');
 @import url('dark-mode.css');
 @font-face {
     font-family: "pauls_super_fontregular";

@@ -455,7 +455,7 @@ main {
   background-color: var(--background-darken);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .grid-central {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

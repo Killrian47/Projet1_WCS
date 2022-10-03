@@ -1,14 +1,11 @@
-html {
-    
-}
 .footer_bis {
+    color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 75px;
 }
 .up {
     font-size: 1.5rem;
-}
-a {
-    color: black;
+    color: white;    
 }
