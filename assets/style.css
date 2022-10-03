@@ -1,7 +1,7 @@
 @import "main.css";
 @import "header.css";
 @import "projet3Helene.css";
-@import url('footer.css');
+@import "footer.css";
 @import url('dark-mode.css');
 @font-face {
     font-family: "pauls_super_fontregular";
@@ -29,6 +29,7 @@
 }
 html {
     width: 100%;
+    scroll-behavior: smooth;
 }
 body {
     height: 100vh;
@@ -40,5 +41,4 @@ body{background-color:var( --body-background-color);
 .dark-thema {
     --body-background-color:var(--dark);
     --light: #012865;
-
 }

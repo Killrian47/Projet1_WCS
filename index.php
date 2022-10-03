@@ -18,7 +18,7 @@
                 <div class="experiences-header">
                 <p></p>
                 <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperiences</h2>
-                <p><i class='fas fa-plus experience-button'></i></p>
+                <p><i class='fas fa-plus experience-button plus-buttons'></i></p>
                 </div>
                 <ul>
                 <?php
@@ -52,7 +52,7 @@
                 for ($i=0;$i<count($questionsEN);$i++) {
                     echo ("<div class='question-block$i'>");
                     echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
-                    echo ("<i class='fas fa-plus button$i'></i>");
+                    echo ("<i class='fas fa-plus plus-buttons button$i'></i>");
                     echo ("</div>");
                     echo ("<p class='answer$i'>$answersEN[$i]</p>");
                 };
