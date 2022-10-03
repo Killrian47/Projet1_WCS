@@ -106,7 +106,7 @@ main {
     vertical-align: middle;
     line-height: 36px;
     color:var(--dark);
-    font-size:clamp(14px,3vw,1.5rem);
+    font-size:clamp(0.8em,3vw,16px);
     font-weight:lighter;
     @media screen and (min-width:1200px) {
         line-height:50px;
@@ -169,7 +169,7 @@ main {
 
 // Responsive
 
-  @media screen and (min-width:800px) {
+  @media screen and (min-width:750px) {
     .grid-central {
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
@@ -221,6 +221,6 @@ main {
 
     }
   }
-  .fas {
+  .plus-buttons {
     color:var(--body-background-color);
   }
