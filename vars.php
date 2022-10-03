@@ -26,12 +26,9 @@ $questionsFR=[
     'Qui est Martha ?',
 
 ];
-$textHoverFR=[
+$experienceDetailsFR=[
     "La Justice League, La Legion des Super Héros,...",
     "Le général Zod, Lex Luthor, Bizarro,..",
-    "333LLorem ipsum dolor sit amet consectetur",
-    "444LLorem ipsum dolor sit amet consectetur",
-    "555LLorem ipsum dolor sit amet consectetur",
 ];
 $answersFR=[
     'La différence principale est que je n\ai besoin d\' aucune armure, arme, ou substance pour obtenir mes pouvoirs. Je suis donc plus efficient, et réduit les coûts.',
@@ -71,9 +68,6 @@ $questionsEN=[
 $experienceDetailsEN=[
     "Justice League, The Legion of Superheroes,...",
     "Zod, Lex Luthor, Bizarro,..",
-    "333LLorem ipsum dolor sit amet consectetur",
-    "444LLorem ipsum dolor sit amet consectetur",
-    "555LLorem ipsum dolor sit amet consectetur",
 ];
 $answersEN=[
     'The main difference is that I don\' need any armor, weapon, or substances to get my powers. This makes me more efficient than any other superhero, and reduces costs.',

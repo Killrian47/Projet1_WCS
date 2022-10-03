@@ -26,14 +26,18 @@
                 </ul>
             </div>
             <div class="experiences">
-                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xpériences</h2>
+                <div class="experiences-header">
+                <p></p>
+                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperiences</h2>
+                <p><i class='fas fa-plus experience-button'></i></p>
+                </div>
                 <ul>
                 <?php
                 for ($i=0;$i<count($experiencesFR);$i++) {
                     echo ("<li class='experiences-items'>");
-                    echo ("<span class='hovertext' data-hover='$textHoverFR[$i]'>");
-                    echo ("$experiencesFR[$i]</span></li>");
-                }
+                    echo ("$experiencesFR[$i]</li>");
+                    echo ("<p class='experience-details'>$experienceDetailsFR[$i]</p>");
+                };
                 ?>
                 </ul>
             </div>
