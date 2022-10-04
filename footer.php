@@ -2,11 +2,19 @@
     <footer>
         <div class="footer_bis">
 
-            <p>&copy; 2022 all right reserved</p>
+            <?php
+                
+                $path = '';
+                if ($path == 'localhost:8080/index-fr.php') {
+                    echo '<p>' .$footerFR. '</p>';
+                } else {
+                    echo '<p>'. $footerEN . '</p>';
+                }
+            ?>
+            
             <a href="#"><i class="fas fa-arrow-up up"></i></a>
         </div>
         <script src="assets/script.js"></script>
-        <script src="script-header.js"></script>
     </footer>
     
     </body>
