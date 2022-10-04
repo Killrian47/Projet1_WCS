@@ -76,6 +76,3 @@ $answersEN=[
     'Being in a team makes you stronger. No matter how fast or strong I can be, nothing replaces teamwork. I am ready to be fully committed into a team.',
     'How do you know her !? MAAAAAARTHAAAAAA',
 ];
-
-$footerFR = '&copy; 2022 tous droits réservés';
-$footerEN = '&copy; 2022 all rights reserved';

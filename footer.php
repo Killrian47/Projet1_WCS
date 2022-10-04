@@ -3,13 +3,8 @@
         <div class="footer_bis">
 
             <?php
-                
-                $path = '';
-                if ($path == 'localhost:8080/index-fr.php') {
-                    echo '<p>' .$footerFR. '</p>';
-                } else {
-                    echo '<p>'. $footerEN . '</p>';
-                }
+                $footerEN ='&copy; 2022 all rights reserved';
+            echo '<p class="footer-en">' .  $footerEN .'</p>'
             ?>
             
             <a href="#"><i class="fas fa-arrow-up up"></i></a>
