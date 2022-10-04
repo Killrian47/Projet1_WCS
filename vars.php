@@ -31,7 +31,7 @@ $experienceDetailsFR=[
     "Le général Zod, Lex Luthor, Bizarro,..",
 ];
 $answersFR=[
-    'La différence principale est que je n\ai besoin d\' aucune armure, arme, ou substance pour obtenir mes pouvoirs. Je suis donc plus efficient, et réduit les coûts.',
+    'La différence principale est que je n\'ai besoin d\' aucune armure, arme, ou substance pour obtenir mes pouvoirs. Je suis donc plus efficient, et réduit les coûts.',
     'Je peux voler mille fois plus rapidement que la vitesse de la lumière. Si Einstein l\'avait su, il en serait devenu fou !',
     'Vous pouvez simplement appeler mon nom à voix haute, je vous entendrai où que je sois, et serai à vos côtés en une fraction de seconde.',
     'Faire partie d\'une équipe vous rend plus fort. Quelle que soit ma force ou ma vitesse, rien ne remplace un travail d\'équipe. Je suis prêt à m\'investir à 100% dans un groupe.',

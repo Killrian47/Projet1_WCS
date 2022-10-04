@@ -25,7 +25,7 @@ let experienceDetails=document.querySelectorAll('.experience-details');
 experienceButton.addEventListener("click", function(event){
     experienceButton.classList.toggle('fa-plus');
     experienceButton.classList.toggle('fa-minus');
-    for (let i=0;i<experienceDetails.length;i++){
+    for (let i=0;i < experienceDetails.length;i++){
         experienceDetails[i].classList.toggle('showDetails');
     }
     
@@ -39,7 +39,11 @@ questionBlock0.addEventListener("click",function(event){
     answerText3.classList.remove('answerShow');
     answerText4.classList.remove('answerShow');
     button0.classList.toggle('fa-plus');
-    button0.classList.toggle('fa-minus');
+    button1.classList.add('fa-plus');
+    button2.classList.add('fa-plus');
+    button3.classList.add('fa-plus');
+    button4.classList.add('fa-plus');
+
 });
 
 questionBlock1.addEventListener("click",function(event){
@@ -50,7 +54,11 @@ questionBlock1.addEventListener("click",function(event){
     answerText3.classList.remove('answerShow');
     answerText4.classList.remove('answerShow');
     button1.classList.toggle('fa-plus');
-    button1.classList.toggle('fa-minus');
+    button0.classList.add('fa-plus');
+    button2.classList.add('fa-plus');
+    button3.classList.add('fa-plus');
+    button4.classList.add('fa-plus');
+
 });
 
 questionBlock2.addEventListener("click",function(event){
@@ -61,7 +69,11 @@ questionBlock2.addEventListener("click",function(event){
     answerText3.classList.remove('answerShow');
     answerText4.classList.remove('answerShow');
     button2.classList.toggle('fa-plus');
-    button2.classList.toggle('fa-minus');
+    button1.classList.add('fa-plus');
+    button0.classList.add('fa-plus');
+    button3.classList.add('fa-plus');
+    button4.classList.add('fa-plus');
+
 });
 questionBlock3.addEventListener("click",function(event){
     event.preventDefault();
@@ -71,7 +83,11 @@ questionBlock3.addEventListener("click",function(event){
     answerText2.classList.remove('answerShow');
     answerText4.classList.remove('answerShow');
     button3.classList.toggle('fa-plus');
-    button3.classList.toggle('fa-minus');
+    button1.classList.add('fa-plus');
+    button2.classList.add('fa-plus');
+    button0.classList.add('fa-plus');
+    button4.classList.add('fa-plus');
+
 });
 questionBlock4.addEventListener("click",function(event){
     event.preventDefault();
@@ -81,5 +97,9 @@ questionBlock4.addEventListener("click",function(event){
     answerText2.classList.remove('answerShow');
     answerText3.classList.remove('answerShow');
     button4.classList.toggle('fa-plus');
-    button4.classList.toggle('fa-minus');
+    button1.classList.add('fa-plus');
+    button2.classList.add('fa-plus');
+    button3.classList.add('fa-plus');
+    button0.classList.add('fa-plus');
+
 });

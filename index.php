@@ -51,14 +51,16 @@
                     <?php
                 for ($i=0;$i<count($questionsEN);$i++) {
                     echo ("<div class='question-block$i'>");
-                    echo ("<h3 class='question$i'>$questionsEN[$i]</h3>");
-                    echo ("<i class='fas fa-plus plus-buttons button$i'></i>");
+                    echo ("<h3 class='questions question$i'>$questionsEN[$i]</h3>");
+                    echo ("<i class='fas fa-minus fa-plus plus-buttons button$i questions-buttons'></i>");
                     echo ("</div>");
-                    echo ("<p class='answer$i'>$answersEN[$i]</p>");
+                    echo ("<p class='answers answer$i'>$answersEN[$i]</p>");
                 };
                 ?>
                 </div>
-                <a class="contact-btn" href="">Contact me</a>
+                <div class='contact-container'>
+                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form.php">Contact me</a><i class="fas fa-envelope"></i>
+                </div>
             </div>
             
        
