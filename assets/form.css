@@ -16,10 +16,12 @@ label {
 }
 input {
     height:24px;
+    border-radius: 10px;
 }
 #message {
     width:50vw;
     height:80px;
+    border-radius: 10px;
 }
 .send-button {
     background-color:var(--title-blocks-color);
