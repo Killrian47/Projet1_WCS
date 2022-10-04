@@ -47,7 +47,7 @@ main {
 }
 
 .main-blocks-titles {
-  font-size: clamp(16px, 4vw, 2rem);
+  font-size: clamp(16px, 3vw, 32px);
   font-family: "Lato", sans-serif;
   text-align: center;
   color: var(--title-blocks-color);
@@ -57,7 +57,7 @@ main {
 }
 .main-blocks-titles .first-letter {
   font-family: "pauls_super_fontregular";
-  font-size: clamp(1.5em, 10vw, 2.5rem);
+  font-size: clamp(0.8em, 5vw, 2.5rem);
   font-weight: bold;
   vertical-align: -webkit-baseline-middle;
   margin-right: -4px;

@@ -15,8 +15,9 @@ label {
     color:white;
 }
 input {
-    height:24px;
+    height:32px;
     border-radius: 10px;
+    text-align: center;
 }
 #message {
     width:50vw;
