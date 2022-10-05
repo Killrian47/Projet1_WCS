@@ -125,7 +125,7 @@ main {
     animation-name:answer-hide;
     animation-duration:0.5s;
     width:90%;
-    font-size:clamp(0.6em,2.5vw,14px);
+    font-size:clamp(0.7em,2.5vw,14px);
     
     &.answerShow {
         display:block;
@@ -238,6 +238,12 @@ main {
         color:white;
     }
     .plus-buttons {
+        color:white;
+    }
+    .fa-envelope {
+        color:var(--title-blocks-color);
+    }
+    .contact-btn {
         color:white;
     }
     
