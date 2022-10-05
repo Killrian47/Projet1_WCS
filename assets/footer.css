@@ -24,6 +24,15 @@ a {
 .footer-en {
     margin-left: 20px;
 }
+.dark-thema .footer_bis {
+    background-color: var(--light);
+}
+.dark-thema .up {
+    color: white;
+}
+.dark-thema .footer-en {
+    color: white;
+}
 @media screen and (min-width: 1000px) {
     footer {
         gap: 20px;
