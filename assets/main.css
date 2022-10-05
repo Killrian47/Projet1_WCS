@@ -167,7 +167,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.6em, 2.5vw, 14px);
+  font-size: clamp(0.7em, 2.5vw, 14px);
 }
 .answer0.answerShow {
   display: block;
@@ -233,7 +233,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.6em, 2.5vw, 14px);
+  font-size: clamp(0.7em, 2.5vw, 14px);
 }
 .answer1.answerShow {
   display: block;
@@ -299,7 +299,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.6em, 2.5vw, 14px);
+  font-size: clamp(0.7em, 2.5vw, 14px);
 }
 .answer2.answerShow {
   display: block;
@@ -365,7 +365,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.6em, 2.5vw, 14px);
+  font-size: clamp(0.7em, 2.5vw, 14px);
 }
 .answer3.answerShow {
   display: block;
@@ -431,7 +431,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.6em, 2.5vw, 14px);
+  font-size: clamp(0.7em, 2.5vw, 14px);
 }
 .answer4.answerShow {
   display: block;
@@ -537,5 +537,11 @@ main {
   color: white;
 }
 .dark-thema .plus-buttons {
+  color: white;
+}
+.dark-thema .fa-envelope {
+  color: var(--title-blocks-color);
+}
+.dark-thema .contact-btn {
   color: white;
 }/*# sourceMappingURL=main.css.map */
