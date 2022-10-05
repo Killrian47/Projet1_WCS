@@ -1,5 +1,6 @@
     <?php
-    include 'header.php'
+    include 'header.php';
+    include 'vars.php';
     ?>
     <main>
         <section class="grid-central">
