@@ -19,6 +19,10 @@ a {
 }
 .up {
     font-size: 1.5rem;
+    margin-right: 20px;
+}
+.footer-en {
+    margin-left: 20px;
 }
 @media screen and (min-width: 1000px) {
     footer {

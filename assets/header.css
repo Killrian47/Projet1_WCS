@@ -98,7 +98,7 @@ a {
     text-align: right;
     color: var(--title-blocks-color);
 }
-.en, .fr {
+.toggle .en, .toggle .fr {
     color: var(--title-blocks-color);
 }
 
@@ -139,7 +139,7 @@ a {
     .toggles {
         margin-top: 14px;
     }
-    .en, .fr {
+    .toggle .en, .toggle .fr {
         font-size: 1.5rem;
     }
 }
@@ -183,7 +183,7 @@ a {
     .dark {
         padding: 0%;
     }
-    .en, .fr {
+    .toggle .en, .toggle .fr {
         font-size: 1.5rem;
     }
 }
