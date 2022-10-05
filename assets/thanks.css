@@ -11,3 +11,9 @@
     width:75%;
     margin:auto;
 }
+.dark-thema .thanks-message {
+    background-color: var(--light);
+}
+.dark-thema p {
+    color:white;
+}

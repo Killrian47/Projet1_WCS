@@ -151,7 +151,6 @@ main {
   line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
-  font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
   .question0 {
@@ -218,7 +217,6 @@ main {
   line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
-  font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
   .question1 {
@@ -285,7 +283,6 @@ main {
   line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
-  font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
   .question2 {
@@ -352,7 +349,6 @@ main {
   line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
-  font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
   .question3 {
@@ -419,7 +415,6 @@ main {
   line-height: 32px;
   color: var(--dark);
   font-size: clamp(0.8em, 3vw, 16px);
-  font-weight: lighter;
 }
 @media screen and (min-width: 1024px) {
   .question4 {

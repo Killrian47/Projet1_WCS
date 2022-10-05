@@ -60,7 +60,7 @@
                 ?>
                 </div>
                 <div class='contact-container'>
-                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form.php">Contactez moi</a><i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form-fr.php">Contactez moi</a><i class="fas fa-envelope"></i>
                 </div>
             </div>
             
