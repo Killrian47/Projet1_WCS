@@ -1,5 +1,6 @@
-     <?php
-    include 'header.php'
+<?php
+    include 'header.php';
+    include 'vars.php';
     ?>
     <main>
         <section class="grid-central">
@@ -17,8 +18,8 @@
             <div class="experiences">
                 <div class="experiences-header">
                 <p></p>
-                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperiences</h2>
-                <p><i class='fas fa-plus experience-button'></i></p>
+                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xpériences</h2>
+                <p><i class='fas fa-plus experience-button plus-buttons'></i></p>
                 </div>
                 <ul>
                 <?php
@@ -51,14 +52,16 @@
                     <?php
                 for ($i=0;$i<count($questionsFR);$i++) {
                     echo ("<div class='question-block$i'>");
-                    echo ("<h3 class='question$i'>$questionsFR[$i]</h3>");
-                    echo ("<i class='fas fa-plus button$i'></i>");
+                    echo ("<h3 class='questions question$i'>$questionsFR[$i]</h3>");
+                    echo ("<i class='fas fa-minus fa-plus plus-buttons button$i questions-buttons'></i>");
                     echo ("</div>");
-                    echo ("<p class='answer$i'>$answersFR[$i]</p>");
+                    echo ("<p class='answers answer$i'>$answersFR[$i]</p>");
                 };
                 ?>
                 </div>
-                <a class="contact-btn" href="">Contactez moi</a>
+                <div class='contact-container'>
+                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form-fr.php">Contactez moi</a><i class="fas fa-envelope"></i>
+                </div>
             </div>
             
        
