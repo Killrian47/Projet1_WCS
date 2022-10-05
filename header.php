@@ -24,8 +24,8 @@
 
                 <div class="name-menu">
                     <div class="name">
-                        <h2 class="name-hero">Superman</h2>
-                        <h2 class="name-hero-bis">Superman</h2>
+                        <a href="/"><h2 class="name-hero">Superman</h2></a>
+                        <a href="/"><h2 class="name-hero-bis">Superman</h2></a>
                     </div>
 
                     <ul class="menu">
