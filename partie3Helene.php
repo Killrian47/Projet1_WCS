@@ -8,21 +8,51 @@
 </head>
     <div class="feedbackBox">
 
-    <div> <h2> Clients feedback </h2> </div>
+    <div> <h2 class="main-blocks-titles"> <span class="first-letter">F</span>eedbacks </h2> </div>
 
     <div class="clients"> 
         <div class="batman">
             <h3> Batman</h3>
-            <p> This guy is awesome. Also, I'm Batman. </p>
+
+            <div class="ratingStars"> 
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>   
+
+             <p class="feedbackText"> This guy is awesome. Also, I'm Batman. </p>
         </div>
+
         <div class="frodonSacquet">
             <h3> Frodon Sacquet </h3>
-            <p> Always rigt on time !</p>
+
+            <div class="ratingStars"> 
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>   
+
+            <p class="feedbackText">Always right on time !</p>
         </div>
+
         <div class="saulGoodman"> 
-            <h3> Saul Goodman </h3>
-            <p> Justice is in good hands.</p>
+            <h3> Saul Goodman </h3><div class="ratingStars"> 
+                <i class="fas fa-star"></i> 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>   
+
+
+
+            <p class="feedbackText"> Justice is in good hands.</p>
         </div>
+
     </div>
 </div>
 </html>
