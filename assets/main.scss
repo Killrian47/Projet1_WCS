@@ -44,16 +44,17 @@ main {
     grid-row-end:4;
 }
 .main-blocks-titles {
-    font-size:clamp(16px,3vw,32px);
+    font-size:clamp(1.7em,3vw,32px);
     font-family: "Lato", sans-serif; 
     text-align:center;
     color:var(--title-blocks-color);
     padding:8px;
+    padding-top:16px;
     line-height:24px;
     font-weight: bold;
     .first-letter {
         font-family: 'pauls_super_fontregular';
-        font-size:clamp(0.8em,5vw,2.5rem);
+        font-size:clamp(1.8em,8.5vw,2.5rem);
         font-weight: bold;
         vertical-align: -webkit-baseline-middle;
  
@@ -93,6 +94,9 @@ main {
         color:var(--dark);
     }
 }
+.contact-btn {
+    text-decoration:none;
+}
 .fa-envelope {
     color:var(--body-background-color);
 }
@@ -113,7 +117,8 @@ main {
     vertical-align: middle;
     line-height: 32px;
     color:var(--dark);
-    font-size:clamp(0.8em,3vw,16px);
+    font-size:clamp(1em,3vw,16px);
+    font-weight:light;
     @media screen and (min-width:1024px) {
         line-height:32px;
     }
@@ -125,7 +130,7 @@ main {
     animation-name:answer-hide;
     animation-duration:0.5s;
     width:90%;
-    font-size:clamp(0.7em,2.5vw,14px);
+    font-size:clamp(0.9em,2.5vw,14px);
     
     &.answerShow {
         display:block;
@@ -156,9 +161,6 @@ main {
     line-height: 2em;
     background-color:var(--background-darken);
     border-radius:10px;
-    &:hover {
-        background-color:var(--background-darken);
-    }
 }
 
 @for $i from 0 through 4 {
@@ -217,7 +219,7 @@ main {
     opacity:0;
     animation-name:answer-hide;
     animation-duration:0.5s;
-    font-size:0.7em;
+    font-size:clamp(0.9em,2.5vw,14px);
     text-align:center;
     padding:0;
     color:var(--dark);

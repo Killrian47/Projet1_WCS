@@ -22,9 +22,10 @@ include 'header.php';
       <label  for="message">Message</label>
       <textarea  id="message"  name="user_message" placeholder="Entrez votre message" required></textarea>
     </div>
-    <div>
-      <input type="checkbox" id="rulesAccept" required>En soumettant ce formulaire, je accepte que les informations saisies dans ce formulaire soient utilisées, exploitées, traitées pour permettre de me recontacter, pour m’envoyer la newsletter, dans le cadre de la relation commerciale qui découle de cette demande de devis.
-</div>
+<div class="checkbox-rules">
+      <input type="checkbox" id="rulesAccept" required>
+      <span class="rulesText">En soumettant ce formulaire, j'accepte que les informations saisies dans ce formulaire soient utilisées, exploitées, traitées pour permettre de me recontacter.</span>.
+      </div>
       <div  class="button">
       <button  class="send-button" type="submit">Envoyer le message</button>
     </div>
