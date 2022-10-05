@@ -39,6 +39,8 @@ function test_input($data) {
       }
       ?>
       </div>
+
+      <div class="sep"></div>
 </body>
 <?php
 include 'footer.php';
