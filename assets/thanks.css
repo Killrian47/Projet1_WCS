@@ -6,6 +6,7 @@
     border-radius:10px;
     line-height: 36px;
     text-align: center;
+    box-shadow:2px 2px 4px black;
 }
 .thanks-message p {
     width:75%;

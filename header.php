@@ -7,7 +7,7 @@
     <title>Superman Curriculum Vitae</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 
 </head>
 <body>
@@ -16,8 +16,8 @@
         <nav class="header-container">
 
             <div class="logo">
-                <img src="/assets/logo.png" class="logo-light" alt="This is THE logo">
-                <img src="/assets/logo_darkmode.png" class="logo-dark" alt="This is THE logo">
+                <img src="/assets/img/logo.png" class="logo-light" alt="This is THE logo">
+                <img src="/assets/img/logo_darkmode.png" class="logo-dark" alt="This is THE logo">
             </div>
 
             <div class="name_menu_toggle">

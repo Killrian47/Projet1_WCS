@@ -12,13 +12,20 @@ main {
 }
 
 .experiences, .skills, .hobbies, .common-questions-container {
-  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: var(--light);
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
+}
+
+.common-questions-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .experiences-items:hover {
@@ -74,6 +81,7 @@ main {
 
 .question-answer-block {
   display: flex;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -99,6 +107,10 @@ main {
 }
 
 .contact-btn {
+  text-decoration: none;
+  color: black;
+}
+.contact-btnvisited {
   text-decoration: none;
 }
 
@@ -148,15 +160,14 @@ main {
   }
 }
 .question0 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 32px;
+  line-height: 24px;
   color: var(--dark);
   font-size: clamp(1em, 3vw, 16px);
   font-weight: light;
+  padding: 5px;
 }
 @media screen and (min-width: 1024px) {
   .question0 {
@@ -165,14 +176,14 @@ main {
 }
 
 .answer0 {
-  text-align: center;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  width: 90%;
+  width: 75%;
   font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer0.answerShow {
@@ -212,15 +223,14 @@ main {
 }
 
 .question1 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 32px;
+  line-height: 24px;
   color: var(--dark);
   font-size: clamp(1em, 3vw, 16px);
   font-weight: light;
+  padding: 5px;
 }
 @media screen and (min-width: 1024px) {
   .question1 {
@@ -229,14 +239,14 @@ main {
 }
 
 .answer1 {
-  text-align: center;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  width: 90%;
+  width: 75%;
   font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer1.answerShow {
@@ -276,15 +286,14 @@ main {
 }
 
 .question2 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 32px;
+  line-height: 24px;
   color: var(--dark);
   font-size: clamp(1em, 3vw, 16px);
   font-weight: light;
+  padding: 5px;
 }
 @media screen and (min-width: 1024px) {
   .question2 {
@@ -293,14 +302,14 @@ main {
 }
 
 .answer2 {
-  text-align: center;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  width: 90%;
+  width: 75%;
   font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer2.answerShow {
@@ -340,15 +349,14 @@ main {
 }
 
 .question3 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 32px;
+  line-height: 24px;
   color: var(--dark);
   font-size: clamp(1em, 3vw, 16px);
   font-weight: light;
+  padding: 5px;
 }
 @media screen and (min-width: 1024px) {
   .question3 {
@@ -357,14 +365,14 @@ main {
 }
 
 .answer3 {
-  text-align: center;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  width: 90%;
+  width: 75%;
   font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer3.answerShow {
@@ -404,15 +412,14 @@ main {
 }
 
 .question4 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 32px;
+  line-height: 24px;
   color: var(--dark);
   font-size: clamp(1em, 3vw, 16px);
   font-weight: light;
+  padding: 5px;
 }
 @media screen and (min-width: 1024px) {
   .question4 {
@@ -421,14 +428,14 @@ main {
 }
 
 .answer4 {
-  text-align: center;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  width: 90%;
+  width: 75%;
   font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer4.answerShow {
@@ -494,6 +501,7 @@ main {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  align-items: center;
 }
 
 .experience-button {
@@ -513,6 +521,7 @@ main {
   text-align: center;
   padding: 0;
   color: var(--dark);
+  font-style: italic;
 }
 .experience-details.showDetails {
   -webkit-animation-name: answer-show;
