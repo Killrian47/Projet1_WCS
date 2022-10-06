@@ -88,6 +88,10 @@ main {
   width: 90%;
 }
 
+.fa-envelope {
+  color: var(--body-background-color);
+}
+
 .contact-container {
   display: flex;
   justify-content: center;
@@ -112,10 +116,6 @@ main {
 }
 .contact-btnvisited {
   text-decoration: none;
-}
-
-.fa-envelope {
-  color: var(--body-background-color);
 }
 
 @-webkit-keyframes answer-show {
@@ -547,5 +547,8 @@ main {
   color: var(--title-blocks-color);
 }
 .dark-thema .contact-btn {
+  color: white;
+}
+.dark-thema .contact-container:hover .fa-envelope {
   color: white;
 }/*# sourceMappingURL=main.css.map */
