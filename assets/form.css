@@ -1,0 +1,44 @@
+form {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width:70%;
+    align-items: center;
+    justify-content:center;
+    margin:auto;
+    margin-top:20px;
+}
+label {
+    display:block;
+    padding:10px;
+    text-align: center;
+    color:white;
+}
+input {
+    height:32px;
+    border-radius: 10px;
+    text-align: center;
+}
+#message {
+    width:50vw;
+    height:80px;
+    border-radius: 10px;
+}
+.send-button {
+    background-color:var(--title-blocks-color);
+    color:white;
+    line-height:32px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.rulesText {
+    color:white;
+    width:50%;
+}
+.checkbox-rules {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:15px;
+
+}

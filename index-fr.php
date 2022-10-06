@@ -1,15 +1,15 @@
-    <?php
+<?php
     include 'header.php';
     include 'vars.php';
     ?>
     <main>
         <section class="grid-central">
             <div class="skills">
-                <h2 class="main-blocks-titles"><span class="first-letter">S</span>kills</h2>
+                <h2 class="main-blocks-titles"><span class="first-letter">C</span>ompétences</h2>
                 <ul>
                 <?php
                 include 'vars.php';
-                foreach ($skillsEN as $skill) {
+                foreach ($skillsFR as $skill) {
                     echo ("<li class='skills-items'>$skill</li>");
                 }
                 ?>
@@ -18,26 +18,26 @@
             <div class="experiences">
                 <div class="experiences-header">
                 <p></p>
-                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xperiences</h2>
+                <h2 class="main-blocks-titles"><span class="first-letter">E</span>xpériences</h2>
                 <p><i class='fas fa-plus experience-button plus-buttons'></i></p>
                 </div>
                 <ul>
                 <?php
-                for ($i=0;$i<count($experiencesEN);$i++) {
+                for ($i=0;$i<count($experiencesFR);$i++) {
                     echo ("<li class='experiences-items'>");
-                    echo ("$experiencesEN[$i]</li>");
-                    echo ("<p class='experience-details'>$experienceDetailsEN[$i]</p>");
+                    echo ("$experiencesFR[$i]</li>");
+                    echo ("<p class='experience-details'>$experienceDetailsFR[$i]</p>");
                 };
                 ?>
                 </ul>
             </div>
             <div class="hobbies">
                 <h2 class="main-blocks-titles">
-                    <span class="first-letter">H</span>obbies
+                    <span class="first-letter">L</span>oisirs
                 </h2>
                 <ul>
                 <?php
-                foreach ($hobbiesEN as $hobbie) {
+                foreach ($hobbiesFR as $hobbie) {
                     echo ("<li class='hobbies-items'>$hobbie</li>");
                 };
                 ?>
@@ -46,28 +46,28 @@
             </div>
             <div class="common-questions-container">
                 <h2 class="main-blocks-titles">
-                    <span class="first-letter">C</span>ommon questions
+                    <span class="first-letter">Q</span>uestions fréquentes
                 </h2>
                 <div class="question-answer-block">
                     <?php
-                for ($i=0;$i<count($questionsEN);$i++) {
+                for ($i=0;$i<count($questionsFR);$i++) {
                     echo ("<div class='question-block$i'>");
-                    echo ("<h3 class='questions question$i'>$questionsEN[$i]</h3>");
+                    echo ("<h3 class='questions question$i'>$questionsFR[$i]</h3>");
                     echo ("<i class='fas fa-minus fa-plus plus-buttons button$i questions-buttons'></i>");
                     echo ("</div>");
-                    echo ("<p class='answers answer$i'>$answersEN[$i]</p>");
+                    echo ("<p class='answers answer$i'>$answersFR[$i]</p>");
                 };
                 ?>
                 </div>
                 <div class='contact-container'>
-                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form.php">Contact me</a><i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope"></i><a class="contact-btn" href="form-fr.php">Contactez moi</a><i class="fas fa-envelope"></i>
                 </div>
             </div>
             
        
         </section>
         <?php 
-    include 'feedbacks.php'
+    include 'feedbacks-fr.php'
     ?>
     </main>
     <?php

@@ -1,0 +1,23 @@
+.thanks-message {
+    width:70vw;
+    background-color:white;
+    margin:auto;
+    margin-top:20px;
+    border-radius:10px;
+    line-height: 36px;
+    text-align: center;
+    box-shadow:2px 2px 4px black;
+}
+.thanks-message p {
+    width:75%;
+    margin:auto;
+}
+.dark-thema .thanks-message {
+    background-color: var(--light);
+}
+.dark-thema p {
+    color:white;
+}
+.sep {
+    height: 45%;
+}

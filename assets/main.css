@@ -1,38 +1,35 @@
-@font-face {
-  font-family: "pauls_super_fontregular";
-  src: url("webfontkit-20220927-034658/pauls_super_font-webfont.woff") format("woff2"), url("webfontkit-20220927-034658/pauls_super_font-webfont.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  box-sizing: border-box;
+main {
+  margin-top: 20px;
 }
 
 .grid-central {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.experiences, .skills, .hobbies {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 95%;
+  margin: auto;
 }
 
-.experiences-items {
+.experiences, .skills, .hobbies, .common-questions-container {
   width: 100%;
-  text-decoration: none;
-}
-.experiences-items:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  height: 100%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
 }
 
-.experiences {
-  background-color: rgba(4, 113, 255, 0.1333333333);
-  border: 1px solid #A80F14;
-  border-top: 3px solid #A80F14;
+.common-questions-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiences-items:hover {
+  background-color: var(--background-darken);
 }
 
 .skills {
@@ -40,7 +37,6 @@
   grid-column-end: 1;
   grid-row-start: 2;
   grid-row-end: 3;
-  border-right: 1px solid #A80F14;
 }
 
 .hobbies {
@@ -48,11 +44,6 @@
   grid-column-end: 1;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: rgba(4, 113, 255, 0.1333333333);
-  border: 1px solid #A80F14;
-}
-.hobbies .hobbies-en-items {
-  display: none;
 }
 
 .common-questions-container {
@@ -60,56 +51,71 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
-  background-color: rgba(4, 113, 255, 0.1333333333);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 3px solid #A80F14;
 }
 
 .main-blocks-titles {
-  font-size: clamp(16px, 4vw, 2rem);
+  font-size: clamp(1.7em, 3vw, 32px);
   font-family: "Lato", sans-serif;
   text-align: center;
-  font-weight: lighter;
-  color: #A80F14;
+  color: var(--title-blocks-color);
   padding: 8px;
+  padding-top: 16px;
+  line-height: 24px;
+  font-weight: bold;
 }
 .main-blocks-titles .first-letter {
   font-family: "pauls_super_fontregular";
-  font-size: clamp(0.8em, 7vw, 2.5rem);
+  font-size: clamp(1.8em, 8.5vw, 2.5rem);
   font-weight: bold;
+  vertical-align: -webkit-baseline-middle;
 }
 
-ul {
+.hobbies-items, .experiences-items, .skills-items {
   padding: 0;
-}
-ul li {
   list-style: none;
-  line-height: 32px;
-  color: black;
+  color: var(--dark);
   text-align: center;
+  margin-bottom: 5px;
+  line-height: 24px;
 }
 
 .question-answer-block {
   display: flex;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  line-height: 32px;
+}
+.contact-container:hover {
+  background-color: var(--title-blocks-color);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: var(--dark);
 }
 
 .contact-btn {
-  width: 100%;
-  text-align: center;
-  line-height: 32px;
   text-decoration: none;
   color: black;
 }
-.contact-btn:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
-  color: black;
+.contact-btnvisited {
+  text-decoration: none;
+}
+
+.fa-envelope {
+  color: var(--body-background-color);
 }
 
 @-webkit-keyframes answer-show {
@@ -154,25 +160,31 @@ ul li {
   }
 }
 .question0 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 30px;
-  color: black;
+  line-height: 24px;
+  color: var(--dark);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .question0 {
+    line-height: 32px;
+  }
 }
 
 .answer0 {
-  text-align: left;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  margin-bottom: 15px;
-  width: 90%;
+  width: 75%;
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer0.answerShow {
   display: block;
@@ -183,6 +195,11 @@ ul li {
   line-height: 24px;
   opacity: 1;
 }
+@media screen and (min-width: 1024px) {
+  .answer0.answerShow {
+    line-height: 24px;
+  }
+}
 
 .button0 {
   font-weight: bolder;
@@ -191,39 +208,46 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
-  align-self: flex-end;
   width: 20%;
 }
 
 .question-block0 {
   display: flex;
-  padding: 8px;
   width: 100%;
-}
-.question-block0:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  line-height: 2em;
+  background-color: var(--background-darken);
+  border-radius: 10px;
 }
 
 .question1 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 30px;
-  color: black;
+  line-height: 24px;
+  color: var(--dark);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .question1 {
+    line-height: 32px;
+  }
 }
 
 .answer1 {
-  text-align: left;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  margin-bottom: 15px;
-  width: 90%;
+  width: 75%;
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer1.answerShow {
   display: block;
@@ -234,6 +258,11 @@ ul li {
   line-height: 24px;
   opacity: 1;
 }
+@media screen and (min-width: 1024px) {
+  .answer1.answerShow {
+    line-height: 24px;
+  }
+}
 
 .button1 {
   font-weight: bolder;
@@ -242,39 +271,46 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
-  align-self: flex-end;
   width: 20%;
 }
 
 .question-block1 {
   display: flex;
-  padding: 8px;
   width: 100%;
-}
-.question-block1:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  line-height: 2em;
+  background-color: var(--background-darken);
+  border-radius: 10px;
 }
 
 .question2 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 30px;
-  color: black;
+  line-height: 24px;
+  color: var(--dark);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .question2 {
+    line-height: 32px;
+  }
 }
 
 .answer2 {
-  text-align: left;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  margin-bottom: 15px;
-  width: 90%;
+  width: 75%;
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer2.answerShow {
   display: block;
@@ -285,6 +321,11 @@ ul li {
   line-height: 24px;
   opacity: 1;
 }
+@media screen and (min-width: 1024px) {
+  .answer2.answerShow {
+    line-height: 24px;
+  }
+}
 
 .button2 {
   font-weight: bolder;
@@ -293,39 +334,46 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
-  align-self: flex-end;
   width: 20%;
 }
 
 .question-block2 {
   display: flex;
-  padding: 8px;
   width: 100%;
-}
-.question-block2:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  line-height: 2em;
+  background-color: var(--background-darken);
+  border-radius: 10px;
 }
 
 .question3 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 30px;
-  color: black;
+  line-height: 24px;
+  color: var(--dark);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .question3 {
+    line-height: 32px;
+  }
 }
 
 .answer3 {
-  text-align: left;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  margin-bottom: 15px;
-  width: 90%;
+  width: 75%;
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer3.answerShow {
   display: block;
@@ -336,6 +384,11 @@ ul li {
   line-height: 24px;
   opacity: 1;
 }
+@media screen and (min-width: 1024px) {
+  .answer3.answerShow {
+    line-height: 24px;
+  }
+}
 
 .button3 {
   font-weight: bolder;
@@ -344,39 +397,46 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
-  align-self: flex-end;
   width: 20%;
 }
 
 .question-block3 {
   display: flex;
-  padding: 8px;
   width: 100%;
-}
-.question-block3:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  line-height: 2em;
+  background-color: var(--background-darken);
+  border-radius: 10px;
 }
 
 .question4 {
-  align-content: center;
-  align-self: flex-start;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
-  line-height: 30px;
-  color: black;
+  line-height: 24px;
+  color: var(--dark);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .question4 {
+    line-height: 32px;
+  }
 }
 
 .answer4 {
-  text-align: left;
+  text-align: justify;
   line-height: 0px;
   opacity: 0;
   -webkit-animation-name: answer-hide;
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  margin-bottom: 15px;
-  width: 90%;
+  width: 75%;
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer4.answerShow {
   display: block;
@@ -387,6 +447,11 @@ ul li {
   line-height: 24px;
   opacity: 1;
 }
+@media screen and (min-width: 1024px) {
+  .answer4.answerShow {
+    line-height: 24px;
+  }
+}
 
 .button4 {
   font-weight: bolder;
@@ -395,41 +460,92 @@ ul li {
   text-align: center;
   vertical-align: middle;
   line-height: 30px;
-  align-self: flex-end;
   width: 20%;
 }
 
 .question-block4 {
   display: flex;
-  padding: 8px;
   width: 100%;
-}
-.question-block4:hover {
-  background-color: rgba(0, 34, 78, 0.1333333333);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  line-height: 2em;
+  background-color: var(--background-darken);
+  border-radius: 10px;
 }
 
-.hovertext {
-  position: relative;
+@media screen and (min-width: 750px) {
+  .grid-central {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-central {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .question-answer-block {
+    line-height: 48px;
+  }
+  .common-questions-container {
+    gap: 48px;
+  }
+  main {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+.experiences-header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
 }
 
-.hovertext:before {
-  content: attr(data-hover);
-  visibility: hidden;
-  opacity: 0;
-  width: 140px;
-  background-color: rgba(0, 34, 78, 0.1333333333);
-  color: #fff;
+.experience-button {
   text-align: center;
-  border-radius: 5px;
-  padding: 5px 0;
-  transition: opacity 0.5s ease-in-out;
-  position: absolute;
-  z-index: 1;
-  left: 110%;
-  top: 110%;
+  vertical-align: center;
+  line-height: 45px;
 }
 
-.hovertext:hover:before {
+.experience-details {
+  line-height: 0px;
+  opacity: 0;
+  -webkit-animation-name: answer-hide;
+          animation-name: answer-hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  font-size: clamp(0.9em, 2.5vw, 14px);
+  text-align: center;
+  padding: 0;
+  color: var(--dark);
+  font-style: italic;
+}
+.experience-details.showDetails {
+  -webkit-animation-name: answer-show;
+          animation-name: answer-show;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  margin-bottom: 5px;
+  line-height: 24px;
   opacity: 1;
-  visibility: visible;
+}
+
+.plus-buttons {
+  color: var(--body-background-color);
+}
+
+.dark-thema .skills-items, .dark-thema .experiences-items, .dark-thema .experience-details, .dark-thema .hobbies-items, .dark-thema .questions, .dark-thema .answers {
+  color: white;
+}
+.dark-thema .plus-buttons {
+  color: white;
+}
+.dark-thema .fa-envelope {
+  color: var(--title-blocks-color);
+}
+.dark-thema .contact-btn {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
