@@ -28,5 +28,17 @@ input {
     background-color:var(--title-blocks-color);
     color:white;
     line-height:32px;
-    width:10vw;
+    padding-left:15px;
+    padding-right:15px;
+}
+.rulesText {
+    color:white;
+    width:50%;
+}
+.checkbox-rules {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:15px;
+
 }

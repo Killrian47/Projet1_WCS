@@ -47,17 +47,18 @@ main {
 }
 
 .main-blocks-titles {
-  font-size: clamp(16px, 3vw, 32px);
+  font-size: clamp(1.7em, 3vw, 32px);
   font-family: "Lato", sans-serif;
   text-align: center;
   color: var(--title-blocks-color);
   padding: 8px;
+  padding-top: 16px;
   line-height: 24px;
   font-weight: bold;
 }
 .main-blocks-titles .first-letter {
   font-family: "pauls_super_fontregular";
-  font-size: clamp(0.8em, 5vw, 2.5rem);
+  font-size: clamp(1.8em, 8.5vw, 2.5rem);
   font-weight: bold;
   vertical-align: -webkit-baseline-middle;
 }
@@ -95,6 +96,10 @@ main {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   color: var(--dark);
+}
+
+.contact-btn {
+  text-decoration: none;
 }
 
 .fa-envelope {
@@ -150,7 +155,8 @@ main {
   vertical-align: middle;
   line-height: 32px;
   color: var(--dark);
-  font-size: clamp(0.8em, 3vw, 16px);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
 }
 @media screen and (min-width: 1024px) {
   .question0 {
@@ -167,7 +173,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.7em, 2.5vw, 14px);
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer0.answerShow {
   display: block;
@@ -204,9 +210,6 @@ main {
   background-color: var(--background-darken);
   border-radius: 10px;
 }
-.question-block0:hover {
-  background-color: var(--background-darken);
-}
 
 .question1 {
   align-content: center;
@@ -216,7 +219,8 @@ main {
   vertical-align: middle;
   line-height: 32px;
   color: var(--dark);
-  font-size: clamp(0.8em, 3vw, 16px);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
 }
 @media screen and (min-width: 1024px) {
   .question1 {
@@ -233,7 +237,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.7em, 2.5vw, 14px);
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer1.answerShow {
   display: block;
@@ -270,9 +274,6 @@ main {
   background-color: var(--background-darken);
   border-radius: 10px;
 }
-.question-block1:hover {
-  background-color: var(--background-darken);
-}
 
 .question2 {
   align-content: center;
@@ -282,7 +283,8 @@ main {
   vertical-align: middle;
   line-height: 32px;
   color: var(--dark);
-  font-size: clamp(0.8em, 3vw, 16px);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
 }
 @media screen and (min-width: 1024px) {
   .question2 {
@@ -299,7 +301,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.7em, 2.5vw, 14px);
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer2.answerShow {
   display: block;
@@ -336,9 +338,6 @@ main {
   background-color: var(--background-darken);
   border-radius: 10px;
 }
-.question-block2:hover {
-  background-color: var(--background-darken);
-}
 
 .question3 {
   align-content: center;
@@ -348,7 +347,8 @@ main {
   vertical-align: middle;
   line-height: 32px;
   color: var(--dark);
-  font-size: clamp(0.8em, 3vw, 16px);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
 }
 @media screen and (min-width: 1024px) {
   .question3 {
@@ -365,7 +365,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.7em, 2.5vw, 14px);
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer3.answerShow {
   display: block;
@@ -402,9 +402,6 @@ main {
   background-color: var(--background-darken);
   border-radius: 10px;
 }
-.question-block3:hover {
-  background-color: var(--background-darken);
-}
 
 .question4 {
   align-content: center;
@@ -414,7 +411,8 @@ main {
   vertical-align: middle;
   line-height: 32px;
   color: var(--dark);
-  font-size: clamp(0.8em, 3vw, 16px);
+  font-size: clamp(1em, 3vw, 16px);
+  font-weight: light;
 }
 @media screen and (min-width: 1024px) {
   .question4 {
@@ -431,7 +429,7 @@ main {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   width: 90%;
-  font-size: clamp(0.7em, 2.5vw, 14px);
+  font-size: clamp(0.9em, 2.5vw, 14px);
 }
 .answer4.answerShow {
   display: block;
@@ -467,9 +465,6 @@ main {
   line-height: 2em;
   background-color: var(--background-darken);
   border-radius: 10px;
-}
-.question-block4:hover {
-  background-color: var(--background-darken);
 }
 
 @media screen and (min-width: 750px) {
@@ -514,7 +509,7 @@ main {
           animation-name: answer-hide;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  font-size: 0.7em;
+  font-size: clamp(0.9em, 2.5vw, 14px);
   text-align: center;
   padding: 0;
   color: var(--dark);
