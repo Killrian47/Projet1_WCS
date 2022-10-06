@@ -83,6 +83,9 @@ main {
     align-items:center;
     width:90%;
 }
+.fa-envelope {
+    color:var(--body-background-color);
+}
 .contact-container {
     display:flex;
     justify-content: center;
@@ -107,9 +110,7 @@ main {
         text-decoration:none;
     }
 }
-.fa-envelope {
-    color:var(--body-background-color);
-}
+
 @keyframes answer-show {
     0% {line-height:0px;
     opacity:0}
@@ -258,6 +259,13 @@ main {
     }
     .contact-btn {
         color:white;
+    }
+    .contact-container {
+        &:hover {
+            .fa-envelope {
+                color:white;
+            }
+        }
     }
     
   }
