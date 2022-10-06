@@ -10,7 +10,10 @@ main {
     margin:auto;
 }
 .experiences, .skills, .hobbies, .common-questions-container {
-    display:flex;
+    // display:flex;
+    width:100%;
+    height:100%;
+    margin:auto;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
@@ -18,7 +21,10 @@ main {
     border-radius: 10px;
     box-shadow:3px 3px 5px black;
 }
-
+.common-questions-container {
+    display:flex;
+    flex-direction:column;
+}
 .experiences-items {
     &:hover {
         background-color:var(--background-darken);
@@ -71,10 +77,14 @@ main {
 }
 .question-answer-block {
     display:flex;
+    margin:auto;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     width:90%;
+}
+.fa-envelope {
+    color:var(--body-background-color);
 }
 .contact-container {
     display:flex;
@@ -86,7 +96,6 @@ main {
     text-decoration:none;
     color:black;
     line-height: 32px;
-
     &:hover {
         background-color:var(--title-blocks-color);
         border-bottom-right-radius:10px;
@@ -96,10 +105,12 @@ main {
 }
 .contact-btn {
     text-decoration:none;
+    color:black;
+    &visited {
+        text-decoration:none;
+    }
 }
-.fa-envelope {
-    color:var(--body-background-color);
-}
+
 @keyframes answer-show {
     0% {line-height:0px;
     opacity:0}
@@ -110,26 +121,25 @@ main {
     100% {line-height:0px;opacity:0}
 }
 @mixin question {
-    align-content: center;
-    align-self:flex-start; 
     width:80%;
-    text-align: center;
+    text-align: justify;
     vertical-align: middle;
-    line-height: 32px;
+    line-height: 24px;
     color:var(--dark);
     font-size:clamp(1em,3vw,16px);
     font-weight:light;
+    padding:5px;
     @media screen and (min-width:1024px) {
         line-height:32px;
     }
 }
 @mixin answer {
-    text-align: center;
+    text-align: justify;
     line-height:0px;
     opacity:0;
     animation-name:answer-hide;
     animation-duration:0.5s;
-    width:90%;
+    width:75%;
     font-size:clamp(0.9em,2.5vw,14px);
     
     &.answerShow {
@@ -208,6 +218,7 @@ main {
     display:flex;
     justify-content:space-around;
     width:100%;
+    align-items:center;
   }
   .experience-button {
     text-align:center;
@@ -223,6 +234,7 @@ main {
     text-align:center;
     padding:0;
     color:var(--dark);
+    font-style: italic;
     &.showDetails {
         animation-name:answer-show;
         animation-duration:0.5s;
@@ -247,6 +259,13 @@ main {
     }
     .contact-btn {
         color:white;
+    }
+    .contact-container {
+        &:hover {
+            .fa-envelope {
+                color:white;
+            }
+        }
     }
     
   }
