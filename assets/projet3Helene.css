@@ -90,6 +90,7 @@
     }
 
     .batman, .frodonSacquet, .saulGoodman {
+        justify-content: space-around;
         height: 180px;
         margin-bottom: 25px;
     }
