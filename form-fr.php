@@ -20,7 +20,7 @@ include 'header.php';
     </div>
     <div>
       <label  for="message">Message</label>
-      <textarea  id="message"  name="user_message" placeholder="Entrez votre message" required></textarea>
+      <textarea  id="message"  name="user_message" placeholder="  Entrez votre message" required></textarea>
     </div>
 <div class="checkbox-rules">
       <input type="checkbox" id="rulesAccept" required>

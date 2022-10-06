@@ -12,6 +12,7 @@ function test_input($data) {
 ?>
 <div class="thanks-message">
     <?php
+    $errors=[];
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["user_firstname"])) {
             echo ($fNameErr = "Name is required");

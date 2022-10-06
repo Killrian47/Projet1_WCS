@@ -16,11 +16,11 @@ include 'header.php';
     </div>
     <div>
       <label  for="phoneNumber">Phone number</label>
-        <input  type="phoneNumber"  id="phoneNumber"  name="user_phone" placeholder="Enter your phone nomber" required>
+        <input  type="phoneNumber"  id="phoneNumber"  name="user_phone" placeholder="Enter your phone number" required>
     </div>
     <div>
       <label  for="message">Message</label>
-      <textarea  id="message"  name="user_message" placeholder="Enter your message" required></textarea>
+      <textarea  id="message"  name="user_message" placeholder="  Enter your message" required></textarea>
     </div>
     <div class="checkbox-rules">
       <input type="checkbox" id="rulesAccept" required>
